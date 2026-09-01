@@ -1,0 +1,42 @@
+{
+  "english": {
+    "n_sentences": 300,
+    "mean_token_length": 9.883333333333333,
+    "median_token_length": 9.0,
+    "max_token_length": 19,
+    "fraction_truncated_at_64": 0.0,
+    "mean_pairwise_cosine_raw_embeddings": 0.9824685454368591
+  },
+  "bangla": {
+    "n_sentences": 300,
+    "mean_token_length": 11.13,
+    "median_token_length": 10.0,
+    "max_token_length": 24,
+    "fraction_truncated_at_64": 0.0,
+    "mean_pairwise_cosine_raw_embeddings": 0.7781140208244324
+  },
+  "telugu": {
+    "n_sentences": 300,
+    "mean_token_length": 25.916666666666668,
+    "median_token_length": 25.0,
+    "max_token_length": 53,
+    "fraction_truncated_at_64": 0.0,
+    "mean_pairwise_cosine_raw_embeddings": 0.744272768497467
+  },
+  "hindi": {
+    "n_sentences": 300,
+    "mean_token_length": 21.426666666666666,
+    "median_token_length": 21.0,
+    "max_token_length": 40,
+    "fraction_truncated_at_64": 0.0,
+    "mean_pairwise_cosine_raw_embeddings": 0.7726593613624573
+  },
+  "arabic": {
+    "n_sentences": 300,
+    "mean_token_length": 15.89,
+    "median_token_length": 14.0,
+    "max_token_length": 70,
+    "fraction_truncated_at_64": 0.0033333333333333335,
+    "mean_pairwise_cosine_raw_embeddings": 0.569362998008728
+  }
+}

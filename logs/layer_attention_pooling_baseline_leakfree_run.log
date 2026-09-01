@@ -1,0 +1,134 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/telugu-bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/hindi-bert-v2 and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+==================== english ====================
+  caching done at 1342.4s
+  LayerAttentionPoolingHead trainable params: 3,540,480
+    [nli] epoch 0 val_loss=2.9723 (best=2.9723)
+    [nli] epoch 1 val_loss=2.6878 (best=2.6878)
+    [nli] epoch 2 val_loss=2.6317 (best=2.6317)
+    [nli] epoch 3 val_loss=2.5407 (best=2.5407)
+    [nli] epoch 4 val_loss=2.5838 (best=2.5407)
+    [nli] epoch 5 val_loss=2.4965 (best=2.4965)
+    [task] epoch 0 val_score=0.7499 (best=0.7499)
+    [task] epoch 1 val_score=0.7629 (best=0.7629)
+    [task] epoch 2 val_score=0.7734 (best=0.7734)
+    [task] epoch 3 val_score=0.7754 (best=0.7754)
+    [task] epoch 4 val_score=0.7712 (best=0.7754)
+    [task] epoch 5 val_score=0.7800 (best=0.7800)
+    [task] epoch 6 val_score=0.7815 (best=0.7815)
+    [task] epoch 7 val_score=0.7755 (best=0.7815)
+    [task] epoch 8 val_score=0.7820 (best=0.7820)
+    [task] epoch 9 val_score=0.7744 (best=0.7820)
+    [task] epoch 10 val_score=0.7863 (best=0.7863)
+    [task] epoch 11 val_score=0.7769 (best=0.7863)
+    [task] epoch 12 val_score=0.7790 (best=0.7863)
+    [task] epoch 13 val_score=0.7797 (best=0.7863)
+    [task] epoch 14 val_score=0.7854 (best=0.7863)
+  checkpoint saved to E:\CognitiveEmbedding\cognitive-embedding\results\layer_attention_head_english_leakfree.pt
+  english: layer-attn raw=0.6982 whitened=0.7144 best=0.7144  n_params=3,540,480  dev_n=500  (2423.5s)
+  published (leak-free): untrained=0.6629 linear=0.7164 structured=0.7383
+
+==================== bangla ====================
+  caching done at 451.5s
+  LayerAttentionPoolingHead trainable params: 3,540,480
+    [task] epoch 0 val_score=0.7897 (best=0.7897)
+    [task] epoch 1 val_score=0.7940 (best=0.7940)
+    [task] epoch 2 val_score=0.7917 (best=0.7940)
+    [task] epoch 3 val_score=0.7684 (best=0.7940)
+    [task] epoch 4 val_score=0.7637 (best=0.7940)
+    [task] epoch 5 val_score=0.7589 (best=0.7940)
+    [task] epoch 6 val_score=0.7839 (best=0.7940)
+    [task] epoch 7 val_score=0.7590 (best=0.7940)
+    [task] epoch 8 val_score=0.7657 (best=0.7940)
+    [task] epoch 9 val_score=0.7859 (best=0.7940)
+    [task] epoch 10 val_score=0.7536 (best=0.7940)
+    [task] epoch 11 val_score=0.7756 (best=0.7940)
+    [task] epoch 12 val_score=0.7681 (best=0.7940)
+    [task] epoch 13 val_score=0.7592 (best=0.7940)
+    [task] epoch 14 val_score=0.7813 (best=0.7940)
+  checkpoint saved to E:\CognitiveEmbedding\cognitive-embedding\results\layer_attention_head_bangla_leakfree.pt
+  bangla: layer-attn raw=0.8300 whitened=0.8606 best=0.8606  n_params=3,540,480  dev_n=500  (1001.3s)
+  published (leak-free): untrained=0.6591 linear=0.8926 structured=0.8732
+
+==================== telugu ====================
+  caching done at 131.8s
+  LayerAttentionPoolingHead trainable params: 3,540,480
+    [task] epoch 0 val_score=0.6135 (best=0.6135)
+    [task] epoch 1 val_score=0.6722 (best=0.6722)
+    [task] epoch 2 val_score=0.7315 (best=0.7315)
+    [task] epoch 3 val_score=0.6158 (best=0.7315)
+    [task] epoch 4 val_score=0.6878 (best=0.7315)
+    [task] epoch 5 val_score=0.7221 (best=0.7315)
+    [task] epoch 6 val_score=0.7021 (best=0.7315)
+    [task] epoch 7 val_score=0.7151 (best=0.7315)
+    [task] epoch 8 val_score=0.6972 (best=0.7315)
+    [task] epoch 9 val_score=0.6899 (best=0.7315)
+    [task] epoch 10 val_score=0.7190 (best=0.7315)
+    [task] epoch 11 val_score=0.7054 (best=0.7315)
+    [task] epoch 12 val_score=0.7208 (best=0.7315)
+    [task] epoch 13 val_score=0.7179 (best=0.7315)
+    [task] epoch 14 val_score=0.7271 (best=0.7315)
+  checkpoint saved to E:\CognitiveEmbedding\cognitive-embedding\results\layer_attention_head_telugu_leakfree.pt
+  telugu: layer-attn raw=0.7005 whitened=0.7188 best=0.7188  n_params=3,540,480  dev_n=130  (277.3s)
+  published (leak-free): untrained=0.7213 linear=0.7912 structured=0.7768
+
+==================== hindi ====================
+  caching done at 1164.7s
+  LayerAttentionPoolingHead trainable params: 3,540,480
+    [nli] epoch 0 val_loss=4.4141 (best=4.4141)
+    [nli] epoch 1 val_loss=4.1457 (best=4.1457)
+    [nli] epoch 2 val_loss=3.9004 (best=3.9004)
+    [nli] epoch 3 val_loss=3.8876 (best=3.8876)
+    [nli] epoch 4 val_loss=3.8929 (best=3.8876)
+    [nli] epoch 5 val_loss=3.8384 (best=3.8384)
+  checkpoint saved to E:\CognitiveEmbedding\cognitive-embedding\results\layer_attention_head_hindi_leakfree.pt
+  hindi: layer-attn raw=0.6581 whitened=0.6139 best=0.6581  n_params=3,540,480  dev_n=288  (1793.4s)
+  published (leak-free): untrained=0.6908 linear=0.7061 structured=0.6777
+
+==================== arabic ====================
+  caching done at 951.4s
+  LayerAttentionPoolingHead trainable params: 3,540,480
+    [nli] epoch 0 val_loss=4.0901 (best=4.0901)
+    [nli] epoch 1 val_loss=3.8764 (best=3.8764)
+    [nli] epoch 2 val_loss=3.8215 (best=3.8215)
+    [nli] epoch 3 val_loss=3.6220 (best=3.6220)
+    [nli] epoch 4 val_loss=3.7404 (best=3.6220)
+    [nli] epoch 5 val_loss=3.5351 (best=3.5351)
+  checkpoint saved to E:\CognitiveEmbedding\cognitive-embedding\results\layer_attention_head_arabic_leakfree.pt
+  arabic: layer-attn raw=0.3750 whitened=0.4024 best=0.4024  n_params=3,540,480  dev_n=32  (1574.4s)
+  published (leak-free): untrained=0.4498 linear=0.4526 structured=0.4149
+
+=== Summary: how does layer-wise attention pooling compare? (leak-free protocol) ===
+  english: structured=0.7383  linear=0.7164  layer-attn=0.7144  untrained=0.6629
+  bangla: linear=0.8926  structured=0.8732  layer-attn=0.8606  untrained=0.6591
+  telugu: linear=0.7912  structured=0.7768  untrained=0.7213  layer-attn=0.7188
+  hindi: linear=0.7061  untrained=0.6908  structured=0.6777  layer-attn=0.6581
+  arabic: linear=0.4526  untrained=0.4498  structured=0.4149  layer-attn=0.4024
+
+Total time: 7069.9s
+DONE_LAYER_ATTENTION_LEAKFREE
+Resuming: ['english', 'telugu', 'hindi', 'arabic'] already done, skipping.
+
+==================== bangla ====================
+  caching done at 429.9s
+  LayerAttentionPoolingHead trainable params: 3,540,480
+  found existing trained checkpoint for bangla, skipping retraining.
+  bangla: layer-attn raw=0.8300 whitened=0.8667 best=0.8667  n_params=3,540,480  dev_n=500  (434.6s)
+  published (leak-free): untrained=0.6591 linear=0.8926 structured=0.8732
+
+=== Summary: how does layer-wise attention pooling compare? (leak-free protocol) ===
+  english: structured=0.7383  linear=0.7164  layer-attn=0.7144  untrained=0.6629
+  telugu: linear=0.7912  structured=0.7768  untrained=0.7213  layer-attn=0.7188
+  hindi: linear=0.7061  untrained=0.6908  structured=0.6777  layer-attn=0.6581
+  arabic: linear=0.4526  untrained=0.4498  structured=0.4149  layer-attn=0.4024
+  bangla: linear=0.8926  structured=0.8732  layer-attn=0.8667  untrained=0.6591
+
+Total time: 434.6s
+DONE_LAYER_ATTENTION_LEAKFREE

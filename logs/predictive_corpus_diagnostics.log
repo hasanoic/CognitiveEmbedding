@@ -1,0 +1,46 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+=== wikitext2 ===
+  coherence proxy (mean consecutive-sentence cosine, n_pairs=1630): 0.9797
+    epoch  0 val_recall@1=0.0766 (best=0.0766)
+    epoch  1 val_recall@1=0.0450 (best=0.0766)
+    epoch  2 val_recall@1=0.0360 (best=0.0766)
+    epoch  3 val_recall@1=0.0360 (best=0.0766)
+    epoch  4 val_recall@1=0.0360 (best=0.0766)
+    epoch  5 val_recall@1=0.0495 (best=0.0766)
+    epoch  6 val_recall@1=0.0405 (best=0.0766)
+    epoch  7 val_recall@1=0.0405 (best=0.0766)
+    epoch  8 val_recall@1=0.0405 (best=0.0766)
+    epoch  9 val_recall@1=0.0360 (best=0.0766)
+    epoch 10 val_recall@1=0.0360 (best=0.0766)
+    epoch 11 val_recall@1=0.0315 (best=0.0766)
+    epoch 12 val_recall@1=0.0315 (best=0.0766)
+    epoch 13 val_recall@1=0.0405 (best=0.0766)
+    epoch 14 val_recall@1=0.0315 (best=0.0766)
+  candidates=222  R@1: trained=0.0766 untrained=0.0045 chance=0.0045
+
+=== cnn_dailymail ===
+  coherence proxy (mean consecutive-sentence cosine, n_pairs=2988): 0.9759
+    epoch  0 val_recall@1=0.0086 (best=0.0086)
+    epoch  1 val_recall@1=0.0108 (best=0.0108)
+    epoch  2 val_recall@1=0.0108 (best=0.0108)
+    epoch  3 val_recall@1=0.0237 (best=0.0237)
+    epoch  4 val_recall@1=0.0151 (best=0.0237)
+    epoch  5 val_recall@1=0.0108 (best=0.0237)
+    epoch  6 val_recall@1=0.0129 (best=0.0237)
+    epoch  7 val_recall@1=0.0086 (best=0.0237)
+    epoch  8 val_recall@1=0.0151 (best=0.0237)
+    epoch  9 val_recall@1=0.0108 (best=0.0237)
+    epoch 10 val_recall@1=0.0108 (best=0.0237)
+    epoch 11 val_recall@1=0.0108 (best=0.0237)
+    epoch 12 val_recall@1=0.0108 (best=0.0237)
+    epoch 13 val_recall@1=0.0151 (best=0.0237)
+    epoch 14 val_recall@1=0.0129 (best=0.0237)
+  candidates=465  R@1: trained=0.0237 untrained=0.0065 chance=0.0022
+
+=== Summary (specialist English backbone, RoBERTa-base) ===
+  wikitext2: coherence=0.9797  R@1 trained=0.0766 untrained=0.0045  trained>untrained=True
+  cnn_dailymail: coherence=0.9759  R@1 trained=0.0237 untrained=0.0065  trained>untrained=True
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\predictive_corpus_diagnostics.json

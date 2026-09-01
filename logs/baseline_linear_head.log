@@ -1,0 +1,94 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/telugu-bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/hindi-bert-v2 and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+==================== english (roberta-base) -- linear-projection baseline ====================
+    [nli] epoch 0 val_loss=1.7179 (best=1.7179)
+    [nli] epoch 1 val_loss=1.5480 (best=1.5480)
+    [nli] epoch 2 val_loss=1.5660 (best=1.5480)
+    [nli] epoch 3 val_loss=1.6103 (best=1.5480)
+    [nli] epoch 4 val_loss=1.6149 (best=1.5480)
+    [nli] epoch 5 val_loss=1.6149 (best=1.5480)
+    [task] epoch 0 val_score=0.8147 (best=0.8147)
+    [task] epoch 1 val_score=0.8243 (best=0.8243)
+    [task] epoch 2 val_score=0.8202 (best=0.8243)
+    [task] epoch 3 val_score=0.8281 (best=0.8281)
+    [task] epoch 4 val_score=0.8198 (best=0.8281)
+    [task] epoch 5 val_score=0.8198 (best=0.8281)
+    [task] epoch 6 val_score=0.8030 (best=0.8281)
+    [task] epoch 7 val_score=0.8138 (best=0.8281)
+    [task] epoch 8 val_score=0.8231 (best=0.8281)
+    [task] epoch 9 val_score=0.8199 (best=0.8281)
+    [task] epoch 10 val_score=0.8153 (best=0.8281)
+    [task] epoch 11 val_score=0.8070 (best=0.8281)
+    [task] epoch 12 val_score=0.8100 (best=0.8281)
+    [task] epoch 13 val_score=0.8063 (best=0.8281)
+    [task] epoch 14 val_score=0.8113 (best=0.8281)
+  english: untrained_baseline=0.6629 linear_head_raw=0.7164 linear_head_whitened=0.6663 best=0.7164  (3150.6s)
+
+==================== bangla (csebuetnlp/banglabert) -- linear-projection baseline ====================
+    [task] epoch 0 val_score=0.8784 (best=0.8784)
+    [task] epoch 1 val_score=0.8640 (best=0.8784)
+    [task] epoch 2 val_score=0.8741 (best=0.8784)
+    [task] epoch 3 val_score=0.8554 (best=0.8784)
+    [task] epoch 4 val_score=0.8717 (best=0.8784)
+    [task] epoch 5 val_score=0.8733 (best=0.8784)
+    [task] epoch 6 val_score=0.8801 (best=0.8801)
+    [task] epoch 7 val_score=0.8612 (best=0.8801)
+    [task] epoch 8 val_score=0.8700 (best=0.8801)
+    [task] epoch 9 val_score=0.8713 (best=0.8801)
+    [task] epoch 10 val_score=0.8340 (best=0.8801)
+    [task] epoch 11 val_score=0.8498 (best=0.8801)
+    [task] epoch 12 val_score=0.8677 (best=0.8801)
+    [task] epoch 13 val_score=0.8603 (best=0.8801)
+    [task] epoch 14 val_score=0.8727 (best=0.8801)
+  bangla: untrained_baseline=0.6591 linear_head_raw=0.8647 linear_head_whitened=0.7003 best=0.8647  (745.9s)
+
+==================== telugu (l3cube-pune/telugu-bert) -- linear-projection baseline ====================
+    [task] epoch 0 val_score=0.7705 (best=0.7705)
+    [task] epoch 1 val_score=0.7588 (best=0.7705)
+    [task] epoch 2 val_score=0.7876 (best=0.7876)
+    [task] epoch 3 val_score=0.7634 (best=0.7876)
+    [task] epoch 4 val_score=0.7826 (best=0.7876)
+    [task] epoch 5 val_score=0.7663 (best=0.7876)
+    [task] epoch 6 val_score=0.7681 (best=0.7876)
+    [task] epoch 7 val_score=0.7820 (best=0.7876)
+    [task] epoch 8 val_score=0.7851 (best=0.7876)
+    [task] epoch 9 val_score=0.7740 (best=0.7876)
+    [task] epoch 10 val_score=0.7773 (best=0.7876)
+    [task] epoch 11 val_score=0.7711 (best=0.7876)
+    [task] epoch 12 val_score=0.7737 (best=0.7876)
+    [task] epoch 13 val_score=0.7809 (best=0.7876)
+    [task] epoch 14 val_score=0.7795 (best=0.7876)
+  telugu: untrained_baseline=0.7213 linear_head_raw=0.7912 linear_head_whitened=0.7343 best=0.7912  (234.6s)
+
+==================== hindi (l3cube-pune/hindi-bert-v2) -- linear-projection baseline ====================
+    [nli] epoch 0 val_loss=2.6538 (best=2.6538)
+    [nli] epoch 1 val_loss=2.7841 (best=2.6538)
+    [nli] epoch 2 val_loss=2.4580 (best=2.4580)
+    [nli] epoch 3 val_loss=2.4879 (best=2.4580)
+    [nli] epoch 4 val_loss=2.4541 (best=2.4541)
+    [nli] epoch 5 val_loss=2.4133 (best=2.4133)
+  hindi: untrained_baseline=0.6908 linear_head_raw=0.7061 linear_head_whitened=0.6962 best=0.7061  (1925.2s)
+
+==================== arabic (aubmindlab/bert-base-arabertv2) -- linear-projection baseline ====================
+    [nli] epoch 0 val_loss=2.6312 (best=2.6312)
+    [nli] epoch 1 val_loss=2.5166 (best=2.5166)
+    [nli] epoch 2 val_loss=2.5146 (best=2.5146)
+    [nli] epoch 3 val_loss=2.4942 (best=2.4942)
+    [nli] epoch 4 val_loss=2.4383 (best=2.4383)
+    [nli] epoch 5 val_loss=2.3681 (best=2.3681)
+  arabic: untrained_baseline=0.4498 linear_head_raw=0.4526 linear_head_whitened=0.4638 best=0.4638  (1683.8s)
+
+=== Linear-projection baseline summary ===
+  english (roberta-base): baseline=0.6629 linear_head=0.7164 delta_vs_baseline=+0.0535
+  bangla (csebuetnlp/banglabert): baseline=0.6591 linear_head=0.8647 delta_vs_baseline=+0.2055
+  telugu (l3cube-pune/telugu-bert): baseline=0.7213 linear_head=0.7912 delta_vs_baseline=+0.0699
+  hindi (l3cube-pune/hindi-bert-v2): baseline=0.6908 linear_head=0.7061 delta_vs_baseline=+0.0153
+  arabic (aubmindlab/bert-base-arabertv2): baseline=0.4498 linear_head=0.4638 delta_vs_baseline=+0.0140
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\linear_head_baseline_results.json
+Total time: 7743.9s

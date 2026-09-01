@@ -1,0 +1,49 @@
+
+==================== telugu ====================
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/telugu-bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  caching done at 208.4s
+  ParameterMatchedCore trainable params: 589,280
+    [task] epoch 0 val_score=0.6747 (best=0.6747)
+    [task] epoch 1 val_score=0.6923 (best=0.6923)
+    [task] epoch 2 val_score=0.7420 (best=0.7420)
+    [task] epoch 3 val_score=0.7432 (best=0.7432)
+    [task] epoch 4 val_score=0.7421 (best=0.7432)
+    [task] epoch 5 val_score=0.7434 (best=0.7434)
+    [task] epoch 6 val_score=0.7273 (best=0.7434)
+    [task] epoch 7 val_score=0.7260 (best=0.7434)
+    [task] epoch 8 val_score=0.7353 (best=0.7434)
+    [task] epoch 9 val_score=0.7273 (best=0.7434)
+    [task] epoch 10 val_score=0.7273 (best=0.7434)
+    [task] epoch 11 val_score=0.7265 (best=0.7434)
+    [task] epoch 12 val_score=0.7050 (best=0.7434)
+    [task] epoch 13 val_score=0.7105 (best=0.7434)
+    [task] epoch 14 val_score=0.7142 (best=0.7434)
+  telugu: parameter-matched raw=0.7758 whitened=0.7793 best=0.7793  n_params=589,280  (472.8s)
+  published: full-capacity structured=0.7768 linear=0.7912
+  parameter-matched vs full-capacity structured: +0.0025
+  parameter-matched vs linear: -0.0119
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\parameter_matched_all_languages.json)
+
+==================== hindi ====================
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/hindi-bert-v2 and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  caching done at 1720.0s
+  ParameterMatchedCore trainable params: 589,280
+    [nli] epoch 0 val_loss=3.0484 (best=3.0484)
+    [nli] epoch 1 val_loss=2.8139 (best=2.8139)
+    [nli] epoch 2 val_loss=2.6667 (best=2.6667)
+    [nli] epoch 3 val_loss=2.5741 (best=2.5741)
+    [nli] epoch 4 val_loss=2.6573 (best=2.5741)
+    [nli] epoch 5 val_loss=2.6740 (best=2.5741)
+  hindi: parameter-matched raw=0.7313 whitened=0.7213 best=0.7313  n_params=589,280  (3336.8s)
+  published: full-capacity structured=0.6980 linear=0.7061
+  parameter-matched vs full-capacity structured: +0.0333
+  parameter-matched vs linear: +0.0253
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\parameter_matched_all_languages.json)
+
+==================== arabic ====================
+  caching done at 2792.2s
+  ParameterMatchedCore trainable params: 589,280
+    [nli] epoch 0 val_loss=3.0267 (best=3.0267)
+    [nli] epoch 1 val_loss=2.7950 (best=2.7950)

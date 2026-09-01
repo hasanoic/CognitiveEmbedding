@@ -1,0 +1,28 @@
+Loading FLORES-200 devtest subset (mteb/flores, ungated mirror)...
+  english: 500 sentences
+  bangla: 500 sentences
+  telugu: 500 sentences
+  hindi: 500 sentences
+  arabic: 500 sentences
+
+Loading trained core checkpoints (cognitive embedding + linear head)...
+Loading LaBSE...
+
+Embedding all languages (ours + linear + LaBSE)...
+  english done
+  bangla done
+  telugu done
+  hindi done
+  arabic done
+
+=== Cross-lingual bitext retrieval: English <-> X, both directions ===
+  bangla_en_to_x: ours R@1=0.8560  |  linear R@1=0.9460  |  labse R@1=1.0000
+  bangla_x_to_en: ours R@1=0.8500  |  linear R@1=0.9460  |  labse R@1=0.9980
+  telugu_en_to_x: ours R@1=0.8620  |  linear R@1=0.9500  |  labse R@1=1.0000
+  telugu_x_to_en: ours R@1=0.8640  |  linear R@1=0.9600  |  labse R@1=1.0000
+  hindi_en_to_x: ours R@1=0.9340  |  linear R@1=0.9800  |  labse R@1=1.0000
+  hindi_x_to_en: ours R@1=0.9400  |  linear R@1=0.9880  |  labse R@1=1.0000
+  arabic_en_to_x: ours R@1=0.9020  |  linear R@1=0.9580  |  labse R@1=1.0000
+  arabic_x_to_en: ours R@1=0.8980  |  linear R@1=0.9680  |  labse R@1=0.9980
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\bitext_retrieval_results_linear.json

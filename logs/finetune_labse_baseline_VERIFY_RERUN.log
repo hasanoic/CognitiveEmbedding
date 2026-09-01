@@ -1,0 +1,101 @@
+Loading sentence-transformers/LaBSE (full fine-tune, no frozen backbone)...
+  total params: 470,926,848 (all trainable)
+Reduced training set: 300 pairs (main experiments use ~2,200). Test set (unchanged, full): 1379 pairs.
+
+Fine-tuning (2 epochs, batch=8, lr=2e-05)...
+  epoch 0 step 1/38 loss=0.0069  (47s elapsed)
+  epoch 0 step 2/38 loss=0.0084  (95s elapsed)
+  epoch 0 step 3/38 loss=0.0055  (138s elapsed)
+  epoch 0 step 4/38 loss=0.0008  (184s elapsed)
+  epoch 0 step 5/38 loss=0.0013  (232s elapsed)
+  epoch 0 step 6/38 loss=0.0009  (275s elapsed)
+  epoch 0 step 7/38 loss=0.0182  (321s elapsed)
+  epoch 0 step 8/38 loss=0.0016  (370s elapsed)
+  epoch 0 step 9/38 loss=0.0544  (415s elapsed)
+  epoch 0 step 10/38 loss=0.0055  (459s elapsed)
+  epoch 0 step 11/38 loss=0.0017  (508s elapsed)
+  epoch 0 step 12/38 loss=0.0050  (556s elapsed)
+  epoch 0 step 13/38 loss=0.0010  (603s elapsed)
+  epoch 0 step 14/38 loss=0.0036  (655s elapsed)
+  epoch 0 step 15/38 loss=0.0118  (701s elapsed)
+  epoch 0 step 16/38 loss=0.0001  (746s elapsed)
+  epoch 0 step 17/38 loss=0.0026  (797s elapsed)
+  epoch 0 step 18/38 loss=0.0058  (845s elapsed)
+  epoch 0 step 19/38 loss=0.0001  (899s elapsed)
+  epoch 0 step 20/38 loss=0.0013  (949s elapsed)
+  epoch 0 step 21/38 loss=0.0008  (1004s elapsed)
+  epoch 0 step 22/38 loss=0.0003  (1055s elapsed)
+  epoch 0 step 23/38 loss=0.0004  (1103s elapsed)
+  epoch 0 step 24/38 loss=0.0018  (1162s elapsed)
+  epoch 0 step 25/38 loss=0.0155  (1227s elapsed)
+  epoch 0 step 26/38 loss=0.0247  (1284s elapsed)
+  epoch 0 step 27/38 loss=0.0003  (1347s elapsed)
+  epoch 0 step 28/38 loss=0.0010  (1415s elapsed)
+  epoch 0 step 29/38 loss=0.0015  (1479s elapsed)
+  epoch 0 step 30/38 loss=0.0004  (1546s elapsed)
+  epoch 0 step 31/38 loss=0.0002  (1602s elapsed)
+  epoch 0 step 32/38 loss=0.0003  (1664s elapsed)
+  epoch 0 step 33/38 loss=0.0001  (1721s elapsed)
+  epoch 0 step 34/38 loss=0.0004  (1781s elapsed)
+  epoch 0 step 35/38 loss=0.0009  (1847s elapsed)
+  epoch 0 step 36/38 loss=0.0003  (1911s elapsed)
+  epoch 0 step 37/38 loss=0.0001  (1968s elapsed)
+  epoch 0 step 38/38 loss=0.0033  (2035s elapsed)
+  epoch 0 mean_loss=0.0050
+  epoch 1 step 1/38 loss=0.0002  (2098s elapsed)
+  epoch 1 step 2/38 loss=0.0007  (2162s elapsed)
+  epoch 1 step 3/38 loss=0.0005  (2225s elapsed)
+  epoch 1 step 4/38 loss=0.0006  (2285s elapsed)
+  epoch 1 step 5/38 loss=0.0001  (2347s elapsed)
+  epoch 1 step 6/38 loss=0.0011  (2407s elapsed)
+  epoch 1 step 7/38 loss=0.0001  (2471s elapsed)
+  epoch 1 step 8/38 loss=0.0002  (2535s elapsed)
+  epoch 1 step 9/38 loss=0.0016  (2597s elapsed)
+  epoch 1 step 10/38 loss=0.0001  (2667s elapsed)
+  epoch 1 step 11/38 loss=0.0002  (2729s elapsed)
+  epoch 1 step 12/38 loss=0.0001  (2785s elapsed)
+  epoch 1 step 13/38 loss=0.0036  (2846s elapsed)
+  epoch 1 step 14/38 loss=0.0001  (2906s elapsed)
+  epoch 1 step 15/38 loss=0.0020  (2967s elapsed)
+  epoch 1 step 16/38 loss=0.0002  (3031s elapsed)
+  epoch 1 step 17/38 loss=0.0001  (3089s elapsed)
+  epoch 1 step 18/38 loss=0.0001  (3152s elapsed)
+  epoch 1 step 19/38 loss=0.0011  (3218s elapsed)
+  epoch 1 step 20/38 loss=0.0002  (3278s elapsed)
+  epoch 1 step 21/38 loss=0.0004  (3343s elapsed)
+  epoch 1 step 22/38 loss=0.0006  (3405s elapsed)
+  epoch 1 step 23/38 loss=0.0001  (3464s elapsed)
+  epoch 1 step 24/38 loss=0.0001  (3517s elapsed)
+  epoch 1 step 25/38 loss=0.0001  (3575s elapsed)
+  epoch 1 step 26/38 loss=0.0003  (3634s elapsed)
+  epoch 1 step 27/38 loss=0.0009  (3692s elapsed)
+  epoch 1 step 28/38 loss=0.0009  (3748s elapsed)
+  epoch 1 step 29/38 loss=0.0001  (3805s elapsed)
+  epoch 1 step 30/38 loss=0.0005  (3861s elapsed)
+  epoch 1 step 31/38 loss=0.0000  (3919s elapsed)
+  epoch 1 step 32/38 loss=0.0001  (3975s elapsed)
+  epoch 1 step 33/38 loss=0.0004  (4035s elapsed)
+  epoch 1 step 34/38 loss=0.0002  (4091s elapsed)
+  epoch 1 step 35/38 loss=0.0045  (4144s elapsed)
+  epoch 1 step 36/38 loss=0.0001  (4203s elapsed)
+  epoch 1 step 37/38 loss=0.0001  (4263s elapsed)
+  epoch 1 step 38/38 loss=0.0002  (4323s elapsed)
+  epoch 1 mean_loss=0.0006
+
+Evaluating on full STS-B test set...
+
+=== Reduced fine-tune of sentence-transformers/LaBSE on English STS-B ===
+  trained on 300 pairs, 2 epochs
+  test Spearman (fine-tuned): 0.7973
+  (compare against the zero-shot LaBSE number implied by Table tab:specialist's 'vs. LaBSE' column and paper Table tab:baseline-head)
+Traceback (most recent call last):
+  File "<string>", line 7, in <module>
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\finetune_labse_baseline.py", line 168, in main
+    out_path.write_text(json.dumps(result, indent=2))
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\pathlib.py", line 1078, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results_verify\\tables\\labse_finetuned_reduced.json'

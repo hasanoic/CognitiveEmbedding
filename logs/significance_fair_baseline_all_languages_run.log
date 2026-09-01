@@ -1,0 +1,39 @@
+
+==================== english ====================
+  n = 1379
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  reproduced: ours=0.7383 [raw] (paper: 0.7383)  linear=0.7164 [raw] (paper: 0.7164)
+  reproduced margin (ours - linear): +0.0219 (paper: +0.0219)
+  bootstrap (10000 resamples): mean=+0.0219  95% CI=[+0.0010, +0.0434]  SIGNIFICANT at alpha=0.05
+
+==================== bangla ====================
+  n = 1394
+  reproduced: ours=0.8452 [raw] (paper: 0.8452)  linear=0.8647 [raw] (paper: 0.8647)
+  reproduced margin (ours - linear): -0.0194 (paper: -0.0195)
+  bootstrap (10000 resamples): mean=-0.0193  95% CI=[-0.0334, -0.0050]  SIGNIFICANT at alpha=0.05
+
+==================== telugu ====================
+  n = 297
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/telugu-bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  reproduced: ours=0.7768 [raw] (paper: 0.7768)  linear=0.7912 [raw] (paper: 0.7912)
+  reproduced margin (ours - linear): -0.0144 (paper: -0.0144)
+  bootstrap (10000 resamples): mean=-0.0145  95% CI=[-0.0455, +0.0164]  not significant at alpha=0.05
+
+==================== hindi ====================
+  n = 968
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/hindi-bert-v2 and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  reproduced: ours=0.6980 [whitened] (paper: 0.6980)  linear=0.7061 [raw] (paper: 0.7061)
+  reproduced margin (ours - linear): -0.0081 (paper: -0.0081)
+  bootstrap (10000 resamples): mean=-0.0080  95% CI=[-0.0439, +0.0273]  not significant at alpha=0.05
+
+==================== arabic ====================
+  n = 595
+  reproduced: ours=0.4217 [whitened] (paper: 0.4217)  linear=0.4638 [whitened] (paper: 0.4638)
+  reproduced margin (ours - linear): -0.0421 (paper: -0.0421)
+  bootstrap (10000 resamples): mean=-0.0422  95% CI=[-0.1068, +0.0209]  not significant at alpha=0.05
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\significance_fair_baseline_all_languages.json
+DONE_ALL_LANG_SIG_V2

@@ -1,0 +1,94 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/telugu-bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/hindi-bert-v2 and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+==================== english (roberta-base) ====================
+    [nli] epoch 0 val_loss=2.1939 (best=2.1939)
+    [nli] epoch 1 val_loss=1.9798 (best=1.9798)
+    [nli] epoch 2 val_loss=1.8463 (best=1.8463)
+    [nli] epoch 3 val_loss=1.8492 (best=1.8463)
+    [nli] epoch 4 val_loss=1.9050 (best=1.8463)
+    [nli] epoch 5 val_loss=1.8924 (best=1.8463)
+    [task] epoch 0 val_score=0.7966 (best=0.7966)
+    [task] epoch 1 val_score=0.8216 (best=0.8216)
+    [task] epoch 2 val_score=0.8092 (best=0.8216)
+    [task] epoch 3 val_score=0.8215 (best=0.8216)
+    [task] epoch 4 val_score=0.8250 (best=0.8250)
+    [task] epoch 5 val_score=0.8272 (best=0.8272)
+    [task] epoch 6 val_score=0.8083 (best=0.8272)
+    [task] epoch 7 val_score=0.8038 (best=0.8272)
+    [task] epoch 8 val_score=0.8129 (best=0.8272)
+    [task] epoch 9 val_score=0.8109 (best=0.8272)
+    [task] epoch 10 val_score=0.8129 (best=0.8272)
+    [task] epoch 11 val_score=0.8202 (best=0.8272)
+    [task] epoch 12 val_score=0.8152 (best=0.8272)
+    [task] epoch 13 val_score=0.8199 (best=0.8272)
+    [task] epoch 14 val_score=0.8117 (best=0.8272)
+  english: baseline=0.6629 ours_raw=0.7383 ours_whitened=0.7359 best=0.7383  (5046.1s)
+
+==================== bangla (csebuetnlp/banglabert) ====================
+    [task] epoch 0 val_score=0.8233 (best=0.8233)
+    [task] epoch 1 val_score=0.8443 (best=0.8443)
+    [task] epoch 2 val_score=0.8337 (best=0.8443)
+    [task] epoch 3 val_score=0.8169 (best=0.8443)
+    [task] epoch 4 val_score=0.8390 (best=0.8443)
+    [task] epoch 5 val_score=0.8365 (best=0.8443)
+    [task] epoch 6 val_score=0.8433 (best=0.8443)
+    [task] epoch 7 val_score=0.8557 (best=0.8557)
+    [task] epoch 8 val_score=0.8361 (best=0.8557)
+    [task] epoch 9 val_score=0.8121 (best=0.8557)
+    [task] epoch 10 val_score=0.8183 (best=0.8557)
+    [task] epoch 11 val_score=0.8001 (best=0.8557)
+    [task] epoch 12 val_score=0.8171 (best=0.8557)
+    [task] epoch 13 val_score=0.8297 (best=0.8557)
+    [task] epoch 14 val_score=0.8159 (best=0.8557)
+  bangla: baseline=0.6591 ours_raw=0.8452 ours_whitened=0.7042 best=0.8452  (2047.1s)
+
+==================== telugu (l3cube-pune/telugu-bert) ====================
+    [task] epoch 0 val_score=0.6331 (best=0.6331)
+    [task] epoch 1 val_score=0.6984 (best=0.6984)
+    [task] epoch 2 val_score=0.7140 (best=0.7140)
+    [task] epoch 3 val_score=0.7308 (best=0.7308)
+    [task] epoch 4 val_score=0.7388 (best=0.7388)
+    [task] epoch 5 val_score=0.7379 (best=0.7388)
+    [task] epoch 6 val_score=0.7463 (best=0.7463)
+    [task] epoch 7 val_score=0.7263 (best=0.7463)
+    [task] epoch 8 val_score=0.7410 (best=0.7463)
+    [task] epoch 9 val_score=0.7313 (best=0.7463)
+    [task] epoch 10 val_score=0.7410 (best=0.7463)
+    [task] epoch 11 val_score=0.7425 (best=0.7463)
+    [task] epoch 12 val_score=0.7303 (best=0.7463)
+    [task] epoch 13 val_score=0.7597 (best=0.7597)
+    [task] epoch 14 val_score=0.7415 (best=0.7597)
+  telugu: baseline=0.7213 ours_raw=0.7768 ours_whitened=0.7181 best=0.7768  (648.6s)
+
+==================== hindi (l3cube-pune/hindi-bert-v2) ====================
+    [nli] epoch 0 val_loss=3.9094 (best=3.9094)
+    [nli] epoch 1 val_loss=3.5868 (best=3.5868)
+    [nli] epoch 2 val_loss=3.3664 (best=3.3664)
+    [nli] epoch 3 val_loss=3.3769 (best=3.3664)
+    [nli] epoch 4 val_loss=3.3932 (best=3.3664)
+    [nli] epoch 5 val_loss=3.3585 (best=3.3585)
+  hindi: baseline=0.6908 ours_raw=0.6777 ours_whitened=0.6980 best=0.6980  (4574.2s)
+
+==================== arabic (aubmindlab/bert-base-arabertv2) ====================
+    [nli] epoch 0 val_loss=3.6210 (best=3.6210)
+    [nli] epoch 1 val_loss=3.2429 (best=3.2429)
+    [nli] epoch 2 val_loss=3.1533 (best=3.1533)
+    [nli] epoch 3 val_loss=3.2357 (best=3.1533)
+    [nli] epoch 4 val_loss=3.1722 (best=3.1533)
+    [nli] epoch 5 val_loss=3.1885 (best=3.1533)
+  arabic: baseline=0.4498 ours_raw=0.4149 ours_whitened=0.4217 best=0.4217  (4253.8s)
+
+=== Specialist-backbone summary ===
+  english (roberta-base): baseline=0.6629 ours=0.7383 delta=+0.0754
+  bangla (csebuetnlp/banglabert): baseline=0.6591 ours=0.8452 delta=+0.1861
+  telugu (l3cube-pune/telugu-bert): baseline=0.7213 ours=0.7768 delta=+0.0555
+  hindi (l3cube-pune/hindi-bert-v2): baseline=0.6908 ours=0.6980 delta=+0.0072
+  arabic (aubmindlab/bert-base-arabertv2): baseline=0.4498 ours=0.4217 delta=-0.0281
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\specialist_backbone_results.json
+Total time: 16577.2s

@@ -1,0 +1,21 @@
+Loading frozen backbone + existing core_model.pt...
+Caching FLORES dev parallel pairs (EN-BN, EN-TE, EN-HI, EN-AR)...
+  bangla: train=18 val=2
+  telugu: train=18 val=2
+  hindi: train=18 val=2
+  arabic: train=18 val=2
+Caching done at 24.0s
+
+[xling] epoch  0 val_bitext_recall@1(mean over 4 langs)=1.0000 per-lang=['1.000', '1.000', '1.000', '1.000'] (best=1.0000)
+[xling] epoch  1 val_bitext_recall@1(mean over 4 langs)=1.0000 per-lang=['1.000', '1.000', '1.000', '1.000'] (best=1.0000)
+
+Cross-lingual fine-tune done at 33.2s, best val bitext R@1=1.0000
+
+=== Regression check: monolingual test sets (before was multi-seed mean, see conversation log) ===
+  english: raw=0.7094 whitened=0.6340 best=0.7094
+  bangla: raw=0.9600 whitened=0.7067 best=0.9600
+  telugu: raw=0.5228 whitened=0.5024 best=0.5228
+  hindi: raw=0.6810 whitened=0.3657 best=0.6810
+  arabic: raw=-0.1311 whitened=0.3745 best=0.3745
+
+Total time: 56.1s

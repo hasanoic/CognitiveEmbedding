@@ -1,0 +1,27 @@
+Loading frozen backbone + trained core checkpoint...
+Loaded trained core from E:\CognitiveEmbedding\cognitive-embedding\results\core_model.pt
+Loading LaBSE (sentence-transformers/LaBSE)...
+
+=== english (Germanic, trained, n=1379) ===
+  untrained_baseline=0.6559  ours=0.7161 (delta=+0.0602)  labse=0.7154
+
+=== bangla (Indo-Aryan, trained, n=1394) ===
+  untrained_baseline=0.6584  ours=0.6900 (delta=+0.0316)  labse=0.8820
+
+=== telugu (Dravidian, trained, n=297) ===
+  untrained_baseline=0.7050  ours=0.6958 (delta=-0.0092)  labse=0.7824
+
+=== hindi (Indo-Aryan, zero-shot, n=968) ===
+  untrained_baseline=0.6529  ours=0.6782 (delta=+0.0253)  labse=0.7352
+
+=== arabic (Semitic, zero-shot, n=595) ===
+  untrained_baseline=0.4557  ours=0.4956 (delta=+0.0399)  labse=0.5087
+
+=== Language-generality summary ===
+  Trained tier   -- mean delta=+0.0275  std=0.0285  (n_languages=3)
+  Zero-shot tier -- mean delta=+0.0326  std=0.0073  (n_languages=2)
+  All languages  -- mean delta=+0.0296  std=0.0227
+  Low std across typologically unrelated families = evidence of a language-general mechanism,
+  not proof of it -- five languages is a small sample for a variance claim; report accordingly.
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multilingual_results.json

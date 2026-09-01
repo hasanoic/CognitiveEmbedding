@@ -1,0 +1,49 @@
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\User\.cache\huggingface\hub\datasets--mteb--amazon_massive_intent. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Loading MASSIVE intent classification (en/bn/ar/hi)...
+  en: train=12 test=12
+  bn: train=12 test=12
+  ar: train=12 test=12
+  hi: train=12 test=12
+
+Loading our trained cross-lingual core model...
+Loading LaBSE (reference baseline)...
+
+=============== ours ===============
+  embedding en...
+  embedding bn...
+  embedding ar...
+  embedding hi...
+    monolingual en: acc=0.2500
+    monolingual bn: acc=0.1667
+    monolingual ar: acc=0.2500
+    monolingual hi: acc=0.1667
+    zero-shot (EN classifier) -> en: acc=0.2500
+    zero-shot (EN classifier) -> bn: acc=0.0833
+    zero-shot (EN classifier) -> ar: acc=0.2500
+    zero-shot (EN classifier) -> hi: acc=0.2500
+
+=============== labse ===============
+  embedding en...
+  embedding bn...
+  embedding ar...
+  embedding hi...
+    monolingual en: acc=0.1667
+    monolingual bn: acc=0.1667
+    monolingual ar: acc=0.1667
+    monolingual hi: acc=0.1667
+    zero-shot (EN classifier) -> en: acc=0.1667
+    zero-shot (EN classifier) -> bn: acc=0.1667
+    zero-shot (EN classifier) -> ar: acc=0.1667
+    zero-shot (EN classifier) -> hi: acc=0.0833
+
+=== Summary ===
+lang  ours_mono   ours_zs   labse_mono  labse_zs  
+en    0.2500      0.2500    0.1667      0.1667    
+bn    0.1667      0.0833    0.1667      0.1667    
+ar    0.2500      0.2500    0.1667      0.1667    
+hi    0.1667      0.2500    0.1667      0.0833    
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\classification_results.json
+Total time: 47.6s

@@ -1,0 +1,60 @@
+{
+  "sts_success": {
+    "s1": "A person is boiling noodles.",
+    "s2": "A cat is licking a bottle.",
+    "gold": 0.0,
+    "baseline_sim": 0.975138247013092,
+    "ours_sim": 0.012272639200091362,
+    "labse_sim": 0.6966086626052856
+  },
+  "sts_failure": {
+    "s1": "Rocky and Apollo Creed are running down the beach.",
+    "s2": "The men are jogging on the beach.",
+    "gold": 0.6,
+    "baseline_sim": 0.9778966903686523,
+    "ours_sim": 0.2593693137168884,
+    "labse_sim": 0.5998638868331909
+  },
+  "bitext_example": {
+    "query_en": "Previously, Ring's CEO, Jamie Siminoff, remarked the company started when his doorbell wasn't audible from his shop in his garage.",
+    "true_answer_bn": "পূর্বে, রিং এর সিইও, জেমি সিমিনোফ মন্তব্য করেছিলেন যে প্রতিষ্ঠানটি শুরু হয়েছিল যখন তার গ্যারেজের দোকান থেকে তাঁর ডোরবেল শোনা যেত না।",
+    "before_top1_bn": "তিনি জানান যে তিনি একটি ওয়াই-ফাই ডোর বেল তৈরি করেছিলেন।",
+    "before_top1_is_correct": false,
+    "before_true_rank": 3,
+    "after_top1_bn": "পূর্বে, রিং এর সিইও, জেমি সিমিনোফ মন্তব্য করেছিলেন যে প্রতিষ্ঠানটি শুরু হয়েছিল যখন তার গ্যারেজের দোকান থেকে তাঁর ডোরবেল শোনা যেত না।",
+    "after_top1_is_correct": true,
+    "after_true_rank": 1,
+    "n_candidates": 80
+  },
+  "memory_example": {
+    "query": "There are also love simulation elements related to the game's two main heroines, although they take a very minor role.",
+    "true_context": [
+      "After the game's completion, additional episodes are unlocked, some of them having a higher difficulty than those found in the rest of the game.",
+      "Alongside the main story missions are character-specific sub missions relating to different squad members.",
+      "Outside missions, the player characters rest in a camp, where units can be customized and character growth occurs.",
+      "The route to each story location on the map varies depending on an individual player's approach: when one option is selected, the other is sealed off to the player.",
+      "The player progresses through a series of linear missions, gradually unlocked as maps that can be freely scanned through and replayed as they are unlocked."
+    ],
+    "true_context_scores": [
+      0.987717866897583,
+      0.9853376746177673,
+      0.9847555160522461,
+      0.9829742908477783,
+      0.9790518879890442
+    ],
+    "distractor": "The game's battle system, the BliTZ system, is carried over directly from Valkyira Chronicles.",
+    "distractor_score": 0.9815447926521301
+  },
+  "bangla_paraphrase_example": {
+    "true_paraphrase": {
+      "s1": "ইউরোপীয় ইউনিয়নকে হুঁশিয়ার করল রাশিয়া",
+      "s2": "ইউরোপীয় ইউনিয়নকে হুঁশিয়ার করলো রাশিয়া",
+      "sim": 0.9941420555114746
+    },
+    "correctly_rejected": {
+      "s1": "বাবু মাস্টারের গাড়ি লক্ষ্য করে গুলি-বোমা, 'এটাই তৃণমূলের ভয়ঙ্কর খেলা',মন্তব্য জয়প্রকাশের",
+      "s2": "বাবু মাস্টারের চিকিৎসায় গঠিত ৪ সদস্যের মেডিক্যাল বোর্ড",
+      "sim": 0.062098100781440735
+    }
+  }
+}

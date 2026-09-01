@@ -1,0 +1,11 @@
+{
+  "model": "intfloat/multilingual-e5-base",
+  "train_n": 300,
+  "epochs": 2,
+  "batch_size": 8,
+  "lr": 2e-05,
+  "test_n": 1379,
+  "finetuned_spearman": 0.8551447876251884,
+  "seconds": 1470.7317638397217,
+  "note": "reduced-epoch, reduced-data protocol -- see module docstring; not the same scale as the main experiments"
+}

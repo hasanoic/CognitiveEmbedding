@@ -1,0 +1,23 @@
+{
+  "untrained": {
+    "raw": 0.5033397129514107,
+    "test_fit_whitened": 0.5544587832859538,
+    "dev_fit_whitened": 0.594339516745144,
+    "best_leaky": 0.5544587832859538,
+    "best_leakfree": 0.594339516745144
+  },
+  "ours": {
+    "raw": 0.5153441919212293,
+    "test_fit_whitened": 0.5278089317230883,
+    "dev_fit_whitened": 0.5563254140732361,
+    "best_leaky": 0.5278089317230883,
+    "best_leakfree": 0.5563254140732361
+  },
+  "linear": {
+    "raw": 0.5510433988761415,
+    "test_fit_whitened": 0.5800911201882505,
+    "dev_fit_whitened": 0.5711414077188588,
+    "best_leaky": 0.5800911201882505,
+    "best_leakfree": 0.5711414077188588
+  }
+}

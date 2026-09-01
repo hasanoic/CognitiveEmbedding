@@ -1,0 +1,42 @@
+{
+  "memory": {
+    "english": {
+      "auroc": 0.7798258868415873,
+      "n_retrieval_items": 257
+    },
+    "bangla": {
+      "auroc": 0.7166593269429391,
+      "n_retrieval_items": 477
+    }
+  },
+  "predictive": {
+    "english": {
+      "candidate_set_size": 465,
+      "untrained_recall@1": 0.004301075357943773,
+      "trained_recall@1": 0.02150537632405758,
+      "chance_recall@1": 0.002150537634408602,
+      "untrained_recall@3": 0.008602150715887547,
+      "trained_recall@3": 0.1225806474685669,
+      "chance_recall@3": 0.0064516129032258064,
+      "untrained_recall@5": 0.008602150715887547,
+      "trained_recall@5": 0.20215053856372833,
+      "chance_recall@5": 0.010752688172043012,
+      "n_train_pairs": 2523,
+      "n_val_pairs": 465
+    },
+    "bangla": {
+      "candidate_set_size": 489,
+      "untrained_recall@1": 0.002044989727437496,
+      "trained_recall@1": 0.01635991781949997,
+      "chance_recall@1": 0.002044989775051125,
+      "untrained_recall@3": 0.008179958909749985,
+      "trained_recall@3": 0.059304703027009964,
+      "chance_recall@3": 0.006134969325153374,
+      "untrained_recall@5": 0.010224948637187481,
+      "trained_recall@5": 0.11042945086956024,
+      "chance_recall@5": 0.010224948875255624,
+      "n_train_pairs": 2707,
+      "n_val_pairs": 489
+    }
+  }
+}

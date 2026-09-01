@@ -1,0 +1,14 @@
+{
+  "model": "sentence-transformers/LaBSE",
+  "train_n": 300,
+  "epochs": 2,
+  "batch_size": 8,
+  "lr": 2e-05,
+  "test_n": 1379,
+  "finetuned_spearman": 0.797333318652158,
+  "zero_shot_spearman": 0.7154402110238245,
+  "total_params": 470926848,
+  "trainable_params": 470926848,
+  "seconds": 5257.246111154556,
+  "note": "reduced-epoch, reduced-data protocol -- see module docstring; not the same scale as the main experiments. All parameters trainable (symmetric with the mE5 fine-tune protocol). zero_shot_spearman is from results/tables/multi_seed_results.json's seed-invariant LaBSE baseline, same full 1,379-pair STS-B test set."
+}

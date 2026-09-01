@@ -1,0 +1,140 @@
+{
+  "ours_xlmr": {
+    "total_params": 282474240,
+    "trainable_params": 4430592,
+    "backbone_params": 278043648,
+    "embedding_dim": 768,
+    "ms_per_sentence": 70.52846439999121,
+    "ms_per_sentence_std": 1.0802410188615617,
+    "ms_per_sentence_min": 69.65095499999734,
+    "ms_per_sentence_passes": [
+      72.23388300000806,
+      69.65095499999734,
+      69.78733599997213,
+      70.0180779999937,
+      70.95206999998481
+    ],
+    "sentences_per_sec": 14.178672519064865,
+    "bytes_per_vector": 3072,
+    "mb_per_1m_vectors": 2929.6875,
+    "gb_per_1m_vectors": 2.86102294921875
+  },
+  "baseline_xlmr_meanpool": {
+    "total_params": 278043648,
+    "trainable_params": 0,
+    "embedding_dim": 768,
+    "ms_per_sentence": 71.18221460000495,
+    "ms_per_sentence_std": 6.67192672884216,
+    "ms_per_sentence_min": 66.25485200002004,
+    "ms_per_sentence_passes": [
+      82.91337200000271,
+      69.04541799998697,
+      66.25485200002004,
+      69.44164600001386,
+      68.2557850000012
+    ],
+    "sentences_per_sec": 14.048453052764819,
+    "bytes_per_vector": 3072,
+    "mb_per_1m_vectors": 2929.6875,
+    "gb_per_1m_vectors": 2.86102294921875
+  },
+  "ours_roberta_specialist": {
+    "total_params": 129076224,
+    "trainable_params": 4430592,
+    "backbone_params": 124645632,
+    "embedding_dim": 768,
+    "ms_per_sentence": 72.7375849999953,
+    "ms_per_sentence_std": 7.128906034592802,
+    "ms_per_sentence_min": 67.90865899998607,
+    "ms_per_sentence_passes": [
+      68.73700700001791,
+      74.4063979999919,
+      84.55016499996418,
+      67.90865899998607,
+      68.08569600001647
+    ],
+    "sentences_per_sec": 13.748050612349372,
+    "bytes_per_vector": 3072,
+    "mb_per_1m_vectors": 2929.6875,
+    "gb_per_1m_vectors": 2.86102294921875
+  },
+  "labse": {
+    "total_params": 470926848,
+    "trainable_params": 0,
+    "embedding_dim": 768,
+    "ms_per_sentence": 69.63480580000032,
+    "ms_per_sentence_std": 7.021093292183656,
+    "ms_per_sentence_min": 65.10841600000276,
+    "ms_per_sentence_passes": [
+      68.16792699999496,
+      65.38725500002329,
+      65.10841600000276,
+      67.54188799997792,
+      81.96854300000268
+    ],
+    "sentences_per_sec": 14.360634577945437,
+    "bytes_per_vector": 3072,
+    "mb_per_1m_vectors": 2929.6875,
+    "gb_per_1m_vectors": 2.86102294921875
+  },
+  "me5_base": {
+    "total_params": 278043648,
+    "trainable_params": 0,
+    "embedding_dim": 768,
+    "ms_per_sentence": 69.89055779999035,
+    "ms_per_sentence_std": 5.845349127793749,
+    "ms_per_sentence_min": 65.64580299997033,
+    "ms_per_sentence_passes": [
+      79.80945300001622,
+      70.21617999998853,
+      65.64580299997033,
+      65.85014899999805,
+      67.9312039999786
+    ],
+    "sentences_per_sec": 14.308084403357531,
+    "bytes_per_vector": 3072,
+    "mb_per_1m_vectors": 2929.6875,
+    "gb_per_1m_vectors": 2.86102294921875
+  },
+  "minilm_l6_v2": {
+    "total_params": 22713216,
+    "trainable_params": 0,
+    "embedding_dim": 384,
+    "ms_per_sentence": 11.047735200008901,
+    "ms_per_sentence_std": 1.014378908404663,
+    "ms_per_sentence_min": 10.47253600001568,
+    "ms_per_sentence_passes": [
+      12.84836800001358,
+      10.680673999995633,
+      10.759244000000763,
+      10.47253600001568,
+      10.477854000018851
+    ],
+    "sentences_per_sec": 90.51628970969492,
+    "bytes_per_vector": 1536,
+    "mb_per_1m_vectors": 1464.84375,
+    "gb_per_1m_vectors": 1.430511474609375
+  },
+  "matryoshka_footprint": {
+    "768": {
+      "bytes_per_vector": 3072,
+      "mb_per_1m_vectors": 2929.6875,
+      "gb_per_1m_vectors": 2.86102294921875
+    },
+    "256": {
+      "bytes_per_vector": 1024,
+      "mb_per_1m_vectors": 976.5625,
+      "gb_per_1m_vectors": 0.95367431640625
+    },
+    "128": {
+      "bytes_per_vector": 512,
+      "mb_per_1m_vectors": 488.28125,
+      "gb_per_1m_vectors": 0.476837158203125
+    },
+    "64": {
+      "bytes_per_vector": 256,
+      "mb_per_1m_vectors": 244.140625,
+      "gb_per_1m_vectors": 0.2384185791015625
+    }
+  }
+}

@@ -1,0 +1,31 @@
+Loading frozen backbone + core_model_linear.pt, swapping core for LinearProjectionHead...
+Caching FLORES dev parallel pairs (EN-BN, EN-TE, EN-HI, EN-AR)...
+  bangla: train=878 val=119
+  telugu: train=878 val=119
+  hindi: train=878 val=119
+  arabic: train=878 val=119
+Caching done at 901.1s
+
+[xling] epoch  0 val_bitext_recall@1(mean over 4 langs)=0.9748 per-lang=['0.958', '0.966', '0.992', '0.983'] (best=0.9748)
+[xling] epoch  1 val_bitext_recall@1(mean over 4 langs)=0.9769 per-lang=['0.958', '0.966', '0.992', '0.992'] (best=0.9769)
+[xling] epoch  2 val_bitext_recall@1(mean over 4 langs)=0.9790 per-lang=['0.958', '0.966', '0.992', '1.000'] (best=0.9790)
+[xling] epoch  3 val_bitext_recall@1(mean over 4 langs)=0.9790 per-lang=['0.958', '0.966', '0.992', '1.000'] (best=0.9790)
+[xling] epoch  4 val_bitext_recall@1(mean over 4 langs)=0.9853 per-lang=['0.983', '0.966', '0.992', '1.000'] (best=0.9853)
+[xling] epoch  5 val_bitext_recall@1(mean over 4 langs)=0.9811 per-lang=['0.966', '0.966', '0.992', '1.000'] (best=0.9853)
+[xling] epoch  6 val_bitext_recall@1(mean over 4 langs)=0.9832 per-lang=['0.975', '0.966', '0.992', '1.000'] (best=0.9853)
+[xling] epoch  7 val_bitext_recall@1(mean over 4 langs)=0.9832 per-lang=['0.975', '0.966', '0.992', '1.000'] (best=0.9853)
+[xling] epoch  8 val_bitext_recall@1(mean over 4 langs)=0.9853 per-lang=['0.975', '0.966', '1.000', '1.000'] (best=0.9853)
+[xling] epoch  9 val_bitext_recall@1(mean over 4 langs)=0.9874 per-lang=['0.983', '0.975', '0.992', '1.000'] (best=0.9874)
+[xling] epoch 10 val_bitext_recall@1(mean over 4 langs)=0.9895 per-lang=['0.992', '0.975', '0.992', '1.000'] (best=0.9895)
+[xling] epoch 11 val_bitext_recall@1(mean over 4 langs)=0.9874 per-lang=['0.992', '0.966', '0.992', '1.000'] (best=0.9895)
+
+Cross-lingual fine-tune done at 946.9s, best val bitext R@1=0.9895
+
+=== Regression check: monolingual test sets ===
+  english: raw=0.6225 whitened=0.6601 best=0.6601
+  bangla: raw=0.8824 whitened=0.7023 best=0.8824
+  telugu: raw=0.7513 whitened=0.7083 best=0.7513
+  hindi: raw=0.6267 whitened=0.6495 best=0.6495
+  arabic: raw=0.3471 whitened=0.5006 best=0.5006
+
+Total time: 1794.6s

@@ -1,0 +1,33 @@
+Loading frozen backbone (xlm-roberta-base)...
+Caching NLI triplets...
+  NLI train/val: 5700/300
+Caching EN/BN/TE train+val...
+  EN train/val: 1146/500  BN: 2200/500  TE: 552/130
+Caching 5-language test sets...
+  english: 1379 pairs
+  bangla: 1394 pairs
+  telugu: 297 pairs
+  hindi: 968 pairs
+  arabic: 595 pairs
+Computing untrained baseline + LaBSE scores (seed-invariant, once)...
+  english: baseline=0.6559 labse=0.7154
+  bangla: baseline=0.6584 labse=0.8820
+  telugu: baseline=0.7050 labse=0.7824
+  hindi: baseline=0.6529 labse=0.7352
+  arabic: baseline=0.4557 labse=0.5087
+
+Caching phase done at 3791.9s. Starting 3-seed training loop...
+
+[seed 42] macro_val=0.7790  (4520.9s)  english=0.7140  bangla=0.6855  telugu=0.6739  hindi=0.6825  arabic=0.5156
+[seed 123] macro_val=0.7898  (4468.1s)  english=0.7071  bangla=0.6823  telugu=0.7363  hindi=0.6637  arabic=0.4925
+[seed 2024] macro_val=0.7807  (4446.0s)  english=0.7053  bangla=0.6895  telugu=0.6996  hindi=0.6570  arabic=0.4978
+
+=== Multi-seed summary (mean +/- std across 3 seeds) ===
+  english: ours=0.7088+/-0.0038  baseline=0.6559  labse=0.7154  gap_vs_labse=-0.0066
+  bangla: ours=0.8200+/-0.0060  baseline=0.6584  labse=0.8820  gap_vs_labse=-0.0620
+  telugu: ours=0.7286+/-0.0174  baseline=0.7050  labse=0.7824  gap_vs_labse=-0.0538
+  hindi: ours=0.6677+/-0.0108  baseline=0.6529  labse=0.7352  gap_vs_labse=-0.0675
+  arabic: ours=0.5020+/-0.0099  baseline=0.4557  labse=0.5087  gap_vs_labse=-0.0067
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_results.json
+Total runtime: 17227.0s

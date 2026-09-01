@@ -1,0 +1,47 @@
+Loading frozen backbone + trained checkpoints (if present)...
+Loaded trained core from E:\CognitiveEmbedding\cognitive-embedding\results\core_model.pt
+
+=== Evaluating core embedding (EN STS-B + BN paraphrase) ===
+  en_stsb_spearman: 0.6063596919301736
+  en_stsb_spearman_whitened: 0.7019180626608398
+  bn_paraphrase_auroc: 0.997725
+  bn_paraphrase_auroc_whitened: 0.997825
+  n_en_test_pairs: 1379
+  n_bn_test_pairs: 400
+
+=== Evaluating Memory-Aware Retrieval (content-only, zero-parameter, recommended config) ===
+  memory_content_only_auroc: 0.6814065314433393
+  n_retrieval_items: 113
+
+=== Zero-shot generalization (STS12-16, Hindi -- never seen during training) ===
+  [gen] sts12: raw=0.5737 whitened=0.4943 (n=3108)
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\User\.cache\huggingface\hub\datasets--mteb--sts13-sts. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Generating test split:   0%|          | 0/1500 [00:00<?, ? examples/s]Generating test split: 100%|##########| 1500/1500 [00:00<00:00, 14773.36 examples/s]
+  [gen] sts13: raw=0.6307 whitened=0.7580 (n=1500)
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\User\.cache\huggingface\hub\datasets--mteb--sts14-sts. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Generating test split:   0%|          | 0/3750 [00:00<?, ? examples/s]Generating test split: 100%|##########| 3750/3750 [00:00<00:00, 84033.08 examples/s]
+  [gen] sts14: raw=0.5850 whitened=0.6641 (n=3750)
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\User\.cache\huggingface\hub\datasets--mteb--sts15-sts. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Generating test split:   0%|          | 0/3000 [00:00<?, ? examples/s]Generating test split: 100%|##########| 3000/3000 [00:00<00:00, 63067.81 examples/s]
+  [gen] sts15: raw=0.7186 whitened=0.6255 (n=3000)
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\User\.cache\huggingface\hub\datasets--mteb--sts16-sts. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Generating test split:   0%|          | 0/1186 [00:00<?, ? examples/s]Generating test split: 100%|##########| 1186/1186 [00:00<00:00, 11232.39 examples/s]Generating test split: 100%|##########| 1186/1186 [00:00<00:00, 11023.72 examples/s]
+  [gen] sts16: raw=0.6606 whitened=0.6892 (n=1186)
+  [gen] hindi (SemRel2024, zero-shot, gold STR): raw=0.5957 whitened=0.6729 (n=968)
+
+=== LaBSE specialist-baseline comparison (same EN/BN/Hindi test sets) ===
+  Loading LaBSE (sentence-transformers/LaBSE)...
+  labse_en_stsb_spearman: 0.7154402110238245
+  labse_bn_paraphrase_auroc: 1.0
+  labse_hindi_semrel_str_spearman: 0.7352030040461026
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\full_pipeline_results.json
+Total runtime: 3890.2s

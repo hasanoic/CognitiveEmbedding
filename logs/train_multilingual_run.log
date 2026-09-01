@@ -1,0 +1,56 @@
+Loading frozen backbone (xlm-roberta-base)...
+Backed up previous (English-only fine-tuned) checkpoint to E:\CognitiveEmbedding\cognitive-embedding\results\core_model_en_only.pt
+
+=== Stage 0: NLI pretrain (SNLI+MultiNLI, SimCSE-supervised) ===
+[nli] Train triplets: 5700, Val triplets: 300
+[nli] Caching token features (frozen backbone forward pass, done once)...
+[nli] epoch  0 train_loss=1.3237 val_loss=2.0476 (best=2.0476)
+[nli] epoch  1 train_loss=0.7194 val_loss=1.8152 (best=1.8152)
+[nli] epoch  2 train_loss=0.4633 val_loss=1.7105 (best=1.7105)
+[nli] epoch  3 train_loss=0.3155 val_loss=1.7454 (best=1.7105)
+[nli] epoch  4 train_loss=0.2298 val_loss=1.7936 (best=1.7105)
+[nli] epoch  5 train_loss=0.1643 val_loss=1.7709 (best=1.7105)
+
+=== Stage 1: multilingual joint fine-tune (EN=STS-B, BN=BnPC, TE=SemRel-Telugu) ===
+[multi] EN train/val: 1178/500  BN train/val: 2200/500  TE train/val: 552/130
+[multi] Caching token features for EN+BN+TE (frozen backbone forward pass, done once)...
+[multi] epoch  0 losses(en/bn/te)=0.1578/0.5178/1.5725 | val en_spearman=0.6861 bn_auroc=0.8195 te_spearman=0.6756 macro=0.7271 (best=0.7271)
+[multi] epoch  1 losses(en/bn/te)=0.0618/0.2007/0.6450 | val en_spearman=0.7100 bn_auroc=0.8296 te_spearman=0.6178 macro=0.7191 (best=0.7271)
+[multi] epoch  2 losses(en/bn/te)=0.0515/0.1790/0.2432 | val en_spearman=0.7276 bn_auroc=0.8124 te_spearman=0.7430 macro=0.7610 (best=0.7610)
+[multi] epoch  3 losses(en/bn/te)=0.0269/0.1358/0.1217 | val en_spearman=0.7240 bn_auroc=0.8401 te_spearman=0.7366 macro=0.7669 (best=0.7669)
+[multi] epoch  4 losses(en/bn/te)=0.0247/0.1358/0.0643 | val en_spearman=0.7263 bn_auroc=0.8385 te_spearman=0.7010 macro=0.7553 (best=0.7669)
+[multi] epoch  5 losses(en/bn/te)=0.0251/0.1312/0.1017 | val en_spearman=0.7274 bn_auroc=0.8106 te_spearman=0.6885 macro=0.7421 (best=0.7669)
+[multi] epoch  6 losses(en/bn/te)=0.0210/0.1128/0.0584 | val en_spearman=0.7247 bn_auroc=0.8355 te_spearman=0.7025 macro=0.7542 (best=0.7669)
+[multi] epoch  7 losses(en/bn/te)=0.0286/0.1213/0.0449 | val en_spearman=0.7138 bn_auroc=0.8281 te_spearman=0.7507 macro=0.7642 (best=0.7669)
+[multi] epoch  8 losses(en/bn/te)=0.0229/0.1273/0.0346 | val en_spearman=0.7185 bn_auroc=0.8276 te_spearman=0.7076 macro=0.7512 (best=0.7669)
+[multi] epoch  9 losses(en/bn/te)=0.0273/0.1266/0.0324 | val en_spearman=0.7350 bn_auroc=0.8346 te_spearman=0.7397 macro=0.7698 (best=0.7698)
+[multi] epoch 10 losses(en/bn/te)=0.0201/0.1119/0.0388 | val en_spearman=0.7375 bn_auroc=0.8199 te_spearman=0.7250 macro=0.7608 (best=0.7698)
+[multi] epoch 11 losses(en/bn/te)=0.0169/0.1127/0.0339 | val en_spearman=0.7428 bn_auroc=0.8123 te_spearman=0.7105 macro=0.7552 (best=0.7698)
+[multi] epoch 12 losses(en/bn/te)=0.0183/0.1095/0.0319 | val en_spearman=0.7218 bn_auroc=0.8158 te_spearman=0.7574 macro=0.7650 (best=0.7698)
+[multi] epoch 13 losses(en/bn/te)=0.0156/0.1091/0.0311 | val en_spearman=0.7294 bn_auroc=0.8135 te_spearman=0.7230 macro=0.7553 (best=0.7698)
+[multi] epoch 14 losses(en/bn/te)=0.0137/0.1014/0.0374 | val en_spearman=0.7252 bn_auroc=0.8166 te_spearman=0.7114 macro=0.7510 (best=0.7698)
+
+=== Stage 2: training PredictiveHead ===
+[predictive] Train pairs: 2523, Val pairs: 465
+[predictive] Caching token features...
+[predictive] epoch  0 loss=3.3844 val_recall@1=0.0108 (best=0.0108)
+[predictive] epoch  1 loss=2.8898 val_recall@1=0.0129 (best=0.0129)
+[predictive] epoch  2 loss=2.5778 val_recall@1=0.0129 (best=0.0129)
+[predictive] epoch  3 loss=2.3611 val_recall@1=0.0215 (best=0.0215)
+[predictive] epoch  4 loss=2.1416 val_recall@1=0.0151 (best=0.0215)
+[predictive] epoch  5 loss=1.9487 val_recall@1=0.0194 (best=0.0215)
+[predictive] epoch  6 loss=1.8298 val_recall@1=0.0108 (best=0.0215)
+[predictive] epoch  7 loss=1.5924 val_recall@1=0.0086 (best=0.0215)
+[predictive] epoch  8 loss=1.4589 val_recall@1=0.0129 (best=0.0215)
+[predictive] epoch  9 loss=1.3767 val_recall@1=0.0086 (best=0.0215)
+[predictive] epoch 10 loss=1.2150 val_recall@1=0.0108 (best=0.0215)
+[predictive] epoch 11 loss=1.1587 val_recall@1=0.0108 (best=0.0215)
+[predictive] epoch 12 loss=1.0978 val_recall@1=0.0086 (best=0.0215)
+[predictive] epoch 13 loss=1.0153 val_recall@1=0.0129 (best=0.0215)
+[predictive] epoch 14 loss=0.9975 val_recall@1=0.0151 (best=0.0215)
+
+Total training time: 10246.4s
+NLI pretrain best val loss: 1.7105 (5700 triplets)
+Core best macro val (mean of en_spearman/bn_auroc/te_spearman): 0.7698
+Predictive head best val Recall@1: 0.0215
+Checkpoints saved to E:\CognitiveEmbedding\cognitive-embedding\results

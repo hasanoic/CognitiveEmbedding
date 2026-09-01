@@ -1,0 +1,37 @@
+Loading ArabertPreprocessor (Farasa segmentation + AraBERT normalization)...
+[2026-08-29 07:06:28,320 - farasapy_logger - WARNING]: Be careful with large lines as they may break on interactive mode. You may switch to Standalone mode for such cases.
+Loading AraBERT specialist backbone...
+Loading XNLI ('ar') triplets and applying Farasa preprocessing...
+  NLI train/val: 5400/600
+  test: 595
+  caching (with Farasa) done at 1454.5s
+
+Evaluating untrained baseline (with Farasa preprocessing)...
+  untrained (Farasa): 0.5545  (published, no Farasa: 0.4498)
+
+Training ours head on Farasa-preprocessed Arabic XNLI...
+    epoch 0 val_loss=2.3079 (best=2.3079)
+    epoch 1 val_loss=2.1017 (best=2.1017)
+    epoch 2 val_loss=2.1197 (best=2.1017)
+    epoch 3 val_loss=2.0254 (best=2.0254)
+    epoch 4 val_loss=2.0104 (best=2.0104)
+    epoch 5 val_loss=2.0573 (best=2.0104)
+  ours (Farasa): raw=0.5153 whitened=0.5278 best=0.5278  (published, no Farasa: 0.4217, delta=+0.1061)
+
+Training linear head on Farasa-preprocessed Arabic XNLI...
+    epoch 0 val_loss=1.8395 (best=1.8395)
+    epoch 1 val_loss=1.6686 (best=1.6686)
+    epoch 2 val_loss=1.5941 (best=1.5941)
+    epoch 3 val_loss=1.5661 (best=1.5661)
+    epoch 4 val_loss=1.5520 (best=1.5520)
+    epoch 5 val_loss=1.5838 (best=1.5520)
+  linear (Farasa): raw=0.5510 whitened=0.5801 best=0.5801  (published, no Farasa: 0.4638, delta=+0.1162)
+
+=== Summary: does Farasa preprocessing fix Arabic's anomaly? ===
+  untrained baseline: no-Farasa=0.4498  Farasa=0.5545
+  ours: no-Farasa=0.4217 (below baseline: True)  Farasa=0.5278 (below baseline: True)
+  linear: no-Farasa=0.4638 (below baseline: False)  Farasa=0.5801 (below baseline: False)
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\arabic_farasa_preprocessing.json
+Total time: 3900.5s
+DONE_FARASA_ARABIC

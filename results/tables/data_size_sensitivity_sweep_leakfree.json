@@ -1,0 +1,197 @@
+{
+  "english": {
+    "vary": "task",
+    "ours": {
+      "0.1": {
+        "score": 0.7381453268536741,
+        "n_train": 115
+      },
+      "0.25": {
+        "score": 0.7331457418520556,
+        "n_train": 286
+      },
+      "0.5": {
+        "score": 0.7380471696960283,
+        "n_train": 573
+      },
+      "1.0": {
+        "score": 0.7383233475152673,
+        "n_train": "published checkpoint, leak-free eval"
+      }
+    },
+    "linear": {
+      "0.1": {
+        "score": 0.7052896132748195,
+        "n_train": 115
+      },
+      "0.25": {
+        "score": 0.7199650796061972,
+        "n_train": 286
+      },
+      "0.5": {
+        "score": 0.7146351253296006,
+        "n_train": 573
+      },
+      "1.0": {
+        "score": 0.7163951507422928,
+        "n_train": "published checkpoint, leak-free eval"
+      }
+    }
+  },
+  "telugu": {
+    "vary": "task",
+    "ours": {
+      "0.1": {
+        "score": 0.7282223901957956,
+        "n_train": 55
+      },
+      "0.25": {
+        "score": 0.7242634197912132,
+        "n_train": 138
+      },
+      "0.5": {
+        "score": 0.7568088963204934,
+        "n_train": 276
+      },
+      "1.0": {
+        "score": 0.7767991540693114,
+        "n_train": "published checkpoint, leak-free eval"
+      }
+    },
+    "linear": {
+      "0.1": {
+        "score": 0.787966144597733,
+        "n_train": 55
+      },
+      "0.25": {
+        "score": 0.7772451739384079,
+        "n_train": 138
+      },
+      "0.5": {
+        "score": 0.7859380943146772,
+        "n_train": 276
+      },
+      "1.0": {
+        "score": 0.7912023658050895,
+        "n_train": "published checkpoint, leak-free eval"
+      }
+    }
+  },
+  "hindi": {
+    "vary": "nli",
+    "ours": {
+      "0.1": {
+        "score": 0.6452097529718319,
+        "n_train": 540
+      },
+      "0.25": {
+        "score": 0.6575308461641388,
+        "n_train": 1350
+      },
+      "0.5": {
+        "score": 0.6811866247515688,
+        "n_train": 2700
+      },
+      "1.0": {
+        "score": 0.6777469661946467,
+        "n_train": "published checkpoint, leak-free eval"
+      }
+    },
+    "linear": {
+      "0.1": {
+        "score": 0.7132984737599702,
+        "n_train": 540
+      },
+      "0.25": {
+        "score": 0.7244809201290896,
+        "n_train": 1350
+      },
+      "0.5": {
+        "score": 0.7078933102046441,
+        "n_train": 2700
+      },
+      "1.0": {
+        "score": 0.7060653171855318,
+        "n_train": "published checkpoint, leak-free eval"
+      }
+    }
+  },
+  "arabic": {
+    "vary": "nli",
+    "ours": {
+      "0.1": {
+        "score": 0.38601360503168564,
+        "n_train": 540
+      },
+      "0.25": {
+        "score": 0.38406445611343143,
+        "n_train": 1350
+      },
+      "0.5": {
+        "score": 0.4308956894648788,
+        "n_train": 2700
+      },
+      "1.0": {
+        "score": 0.4149129019845984,
+        "n_train": "published checkpoint, leak-free eval"
+      }
+    },
+    "linear": {
+      "0.1": {
+        "score": 0.4636458705215868,
+        "n_train": 540
+      },
+      "0.25": {
+        "score": 0.46225448832079635,
+        "n_train": 1350
+      },
+      "0.5": {
+        "score": 0.45333358311328736,
+        "n_train": 2700
+      },
+      "1.0": {
+        "score": 0.4525680393892466,
+        "n_train": "published checkpoint, leak-free eval"
+      }
+    }
+  },
+  "bangla": {
+    "vary": "task",
+    "ours": {
+      "0.1": {
+        "score": 0.8011908080513606,
+        "n_train": 220
+      },
+      "0.25": {
+        "score": 0.8339273896491627,
+        "n_train": 550
+      },
+      "0.5": {
+        "score": 0.8434478957638643,
+        "n_train": 1100
+      },
+      "1.0": {
+        "score": 0.8452311286928136,
+        "n_train": "published checkpoint, leak-free eval"
+      }
+    },
+    "linear": {
+      "0.1": {
+        "score": 0.8502318415603927,
+        "n_train": 220
+      },
+      "0.25": {
+        "score": 0.8681556732555491,
+        "n_train": 550
+      },
+      "0.5": {
+        "score": 0.8621101305930845,
+        "n_train": 1100
+      },
+      "1.0": {
+        "score": 0.864655174248244,
+        "n_train": "published checkpoint, leak-free eval"
+      }
+    }
+  }
+}

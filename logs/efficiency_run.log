@@ -1,0 +1,39 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading 100 timing sentences (STS-B test)...
+
+=== Ours (xlm-roberta-base + cognitive core) ===
+  79.45 ms/sentence, trainable=4,430,592 / total=282,474,240
+
+=== Baseline: xlm-roberta-base, raw mean-pool, no trained head ===
+  74.51 ms/sentence, trainable=0
+
+=== Ours (roberta-base specialist + cognitive core) ===
+  76.16 ms/sentence, trainable=4,430,592
+
+=== labse (sentence-transformers/LaBSE) ===
+  105.40 ms/sentence, params=470,926,848, dim=768
+
+=== me5_base (intfloat/multilingual-e5-base) ===
+  99.38 ms/sentence, params=278,043,648, dim=768
+
+=== minilm_l6_v2 (sentence-transformers/all-MiniLM-L6-v2) ===
+  16.24 ms/sentence, params=22,713,216, dim=384
+
+=== Memory footprint by Matryoshka tier (storage cost, not re-timed) ===
+  768-dim: 2929.7 MB / 1M vectors
+  256-dim: 976.6 MB / 1M vectors
+  128-dim: 488.3 MB / 1M vectors
+  64-dim: 244.1 MB / 1M vectors
+
+=== Summary ===
+model                        ms/sent  sent/sec   total_params   trainable   dim  MB/1M vecs
+ours_xlmr                      79.45      12.6    282,474,240   4,430,592   768      2929.7
+baseline_xlmr_meanpool         74.51      13.4    278,043,648           0   768      2929.7
+ours_roberta_specialist        76.16      13.1    129,076,224   4,430,592   768      2929.7
+labse                         105.40       9.5    470,926,848           0   768      2929.7
+me5_base                       99.38      10.1    278,043,648           0   768      2929.7
+minilm_l6_v2                   16.24      61.6     22,713,216           0   384      1464.8
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\efficiency_results.json
+Total time: 71.0s

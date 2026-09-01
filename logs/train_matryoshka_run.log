@@ -1,0 +1,35 @@
+Loading frozen backbone (xlm-roberta-base)...
+Caching NLI triplets...
+  NLI train/val: 5700/300
+Caching EN/BN/TE train+val...
+  EN train/val: 1146/500  BN: 2200/500  TE: 552/130
+Caching done at 2078.0s
+
+=== Stage 0: NLI pretrain (Matryoshka) ===
+[nli] epoch  0 train_loss=1.4794 val_loss=2.1144 (best=2.1144)
+[nli] epoch  1 train_loss=0.7823 val_loss=1.9671 (best=1.9671)
+[nli] epoch  2 train_loss=0.5148 val_loss=1.7939 (best=1.7939)
+[nli] epoch  3 train_loss=0.3562 val_loss=1.7640 (best=1.7640)
+[nli] epoch  4 train_loss=0.2632 val_loss=1.8233 (best=1.7640)
+[nli] epoch  5 train_loss=0.1943 val_loss=1.7957 (best=1.7640)
+
+=== Stage 1: multilingual joint fine-tune (Matryoshka) ===
+[multi] epoch  0 val en=0.7364 bn=0.8269 te=0.6752 macro=0.7462 (best=0.7462)
+[multi] epoch  1 val en=0.7433 bn=0.8445 te=0.6831 macro=0.7570 (best=0.7570)
+[multi] epoch  2 val en=0.7445 bn=0.8499 te=0.6445 macro=0.7463 (best=0.7570)
+[multi] epoch  3 val en=0.7459 bn=0.8175 te=0.6810 macro=0.7482 (best=0.7570)
+[multi] epoch  4 val en=0.7411 bn=0.8492 te=0.6922 macro=0.7608 (best=0.7608)
+[multi] epoch  5 val en=0.7402 bn=0.8322 te=0.7127 macro=0.7617 (best=0.7617)
+[multi] epoch  6 val en=0.7390 bn=0.8351 te=0.6848 macro=0.7530 (best=0.7617)
+[multi] epoch  7 val en=0.7371 bn=0.8437 te=0.7356 macro=0.7721 (best=0.7721)
+[multi] epoch  8 val en=0.7491 bn=0.8212 te=0.7090 macro=0.7598 (best=0.7721)
+[multi] epoch  9 val en=0.7446 bn=0.8217 te=0.7650 macro=0.7771 (best=0.7771)
+[multi] epoch 10 val en=0.7524 bn=0.8168 te=0.7077 macro=0.7589 (best=0.7771)
+[multi] epoch 11 val en=0.7557 bn=0.8068 te=0.7256 macro=0.7627 (best=0.7771)
+[multi] epoch 12 val en=0.7650 bn=0.8479 te=0.6597 macro=0.7576 (best=0.7771)
+[multi] epoch 13 val en=0.7549 bn=0.8371 te=0.7279 macro=0.7733 (best=0.7771)
+[multi] epoch 14 val en=0.7582 bn=0.8305 te=0.7083 macro=0.7657 (best=0.7771)
+
+Total time: 6494.9s
+Best macro val (768-dim): 0.7771
+Saved to E:\CognitiveEmbedding\cognitive-embedding\results\core_model_matryoshka.pt

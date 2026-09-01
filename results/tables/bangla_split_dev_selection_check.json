@@ -1,0 +1,18 @@
+{
+  "ours": {
+    "select_raw": 0.8379824737440632,
+    "select_whitened": 0.6890761923874505,
+    "choice": "raw",
+    "test_raw": 0.8452311286928136,
+    "test_whitened": 0.8858411731033998,
+    "reported_score": 0.8452311286928136
+  },
+  "linear": {
+    "select_raw": 0.8581175998394541,
+    "select_whitened": 0.7024550137132919,
+    "choice": "raw",
+    "test_raw": 0.864655174248244,
+    "test_whitened": 0.8908631656002026,
+    "reported_score": 0.864655174248244
+  }
+}

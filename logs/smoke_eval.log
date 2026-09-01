@@ -1,0 +1,30 @@
+Loading frozen backbone + trained checkpoints (if present)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 5527.85it/s]
+[transformers] [1mXLMRobertaModel LOAD REPORT[0m from: xlm-roberta-base
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loaded trained core from E:\CognitiveEmbedding\cognitive-embedding\results\core_model.pt
+
+=== Evaluating core embedding (EN STS-B + BN paraphrase) ===
+  en_stsb_spearman: 0.1702160464499596
+  en_stsb_spearman_whitened: 0.6568129245216858
+  bn_paraphrase_auroc: 0.91275
+  bn_paraphrase_auroc_whitened: 0.9969
+  n_en_test_pairs: 1379
+  n_bn_test_pairs: 400
+
+=== Evaluating Memory-Aware Retrieval (content-only, zero-parameter, recommended config) ===
+  memory_content_only_auroc: 0.6814065314433393
+  n_retrieval_items: 113
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\full_pipeline_results.json
+Total runtime: 556.3s

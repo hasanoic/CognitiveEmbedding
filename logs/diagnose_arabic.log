@@ -1,0 +1,35 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/telugu-bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/hindi-bert-v2 and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+=== english (roberta-base) ===
+  mean_token_length=9.9 median=9.0 max=19 truncated_frac=0.000
+  anisotropy proxy (mean pairwise cosine, raw embeddings): 0.9825
+
+=== bangla (csebuetnlp/banglabert) ===
+  mean_token_length=11.1 median=10.0 max=24 truncated_frac=0.000
+  anisotropy proxy (mean pairwise cosine, raw embeddings): 0.7781
+
+=== telugu (l3cube-pune/telugu-bert) ===
+  mean_token_length=25.9 median=25.0 max=53 truncated_frac=0.000
+  anisotropy proxy (mean pairwise cosine, raw embeddings): 0.7443
+
+=== hindi (l3cube-pune/hindi-bert-v2) ===
+  mean_token_length=21.4 median=21.0 max=40 truncated_frac=0.000
+  anisotropy proxy (mean pairwise cosine, raw embeddings): 0.7727
+
+=== arabic (aubmindlab/bert-base-arabertv2) ===
+  mean_token_length=15.9 median=14.0 max=70 truncated_frac=0.003
+  anisotropy proxy (mean pairwise cosine, raw embeddings): 0.5694
+
+=== Summary ===
+  english: mean_len=9.9 truncated=0.000 anisotropy=0.9825
+  bangla: mean_len=11.1 truncated=0.000 anisotropy=0.7781
+  telugu: mean_len=25.9 truncated=0.000 anisotropy=0.7443
+  hindi: mean_len=21.4 truncated=0.000 anisotropy=0.7727
+  arabic: mean_len=15.9 truncated=0.003 anisotropy=0.5694
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\arabic_diagnostics.json

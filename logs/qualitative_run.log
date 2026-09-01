@@ -1,0 +1,30 @@
+Loading frozen backbone + checkpoints...
+Loading LaBSE...
+
+=== Finding STS success/failure cases (STS-B test) ===
+  success case found: baseline_err=0.975 ours_err=0.012
+  failure case found: ours_err=0.341 labse_err=0.000
+
+=== Bitext retrieval before/after example ===
+  before: true rank=3/80, top1_correct=False
+  after:  true rank=1/80, top1_correct=True
+
+=== Memory-Aware Retrieval example ===
+  true context scores: ['0.988', '0.985', '0.985', '0.983', '0.979']
+  distractor score: 0.982
+
+=== Bangla paraphrase example (BnPC) ===
+  true paraphrase sim=0.994
+  correctly rejected sim=0.062
+Traceback (most recent call last):
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\qualitative_analysis.py", line 199, in <module>
+    main()
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\qualitative_analysis.py", line 193, in main
+    out_path.write_text(json.dumps(results, indent=2, ensure_ascii=False))
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\pathlib.py", line 1079, in write_text
+    return f.write(data)
+           ^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 716-721: character maps to <undefined>

@@ -1,0 +1,43 @@
+Loading frozen backbone (xlm-roberta-base)...
+Caching EN/BN/TE train+val (shared across all 3 arms)...
+  EN train/val: 1178/500  BN: 2200/500  TE: 552/130
+Caching 5-language test sets (shared across all 3 arms)...
+  english: 1379 pairs
+  bangla: 1394 pairs
+  telugu: 297 pairs
+  hindi: 968 pairs
+  arabic: 595 pairs
+Caching done at 1731.5s
+
+=== Training arm: attention_only ===
+  best macro val (EN/BN/TE): 0.7903  (923.9s)
+    english: raw=0.6876 whitened=0.7068 best=0.7068
+    bangla: raw=0.8432 whitened=0.6821 best=0.8432
+    telugu: raw=0.7617 whitened=0.6864 best=0.7617
+    hindi: raw=0.7029 whitened=0.6670 best=0.7029
+    arabic: raw=0.3893 whitened=0.4685 best=0.4685
+
+=== Training arm: composition_only ===
+  best macro val (EN/BN/TE): 0.7737  (1559.8s)
+    english: raw=0.6499 whitened=0.6944 best=0.6944
+    bangla: raw=0.8427 whitened=0.8055 best=0.8427
+    telugu: raw=0.6983 whitened=0.6913 best=0.6983
+    hindi: raw=0.5961 whitened=0.6019 best=0.6019
+    arabic: raw=0.3828 whitened=0.4695 best=0.4695
+
+=== Training arm: combined ===
+  best macro val (EN/BN/TE): 0.7713  (2526.5s)
+    english: raw=0.6520 whitened=0.7134 best=0.7134
+    bangla: raw=0.8462 whitened=0.7029 best=0.8462
+    telugu: raw=0.7302 whitened=0.7100 best=0.7302
+    hindi: raw=0.6461 whitened=0.6720 best=0.6720
+    arabic: raw=0.3578 whitened=0.5072 best=0.5072
+
+=== Ablation summary (best-of raw/whitened, per language) ===
+arm               english   bangla    telugu    hindi     arabic    
+attention_only    0.7068    0.8432    0.7617    0.7029    0.4685    
+composition_only  0.6944    0.8427    0.6983    0.6019    0.4695    
+combined          0.7134    0.8462    0.7302    0.6720    0.5072    
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\ablation_core_components.json
+Total time: 6823.7s

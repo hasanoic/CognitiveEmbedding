@@ -1,0 +1,29 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+=============== english (roberta-base) ===============
+  Memory-Aware Retrieval (english)...
+    auroc=0.6324 (n_items=10)
+  Predictive Head (english)...
+    epoch  0 val_recall@1=0.0500 (best=0.0500)
+    epoch  1 val_recall@1=0.0500 (best=0.0500)
+    trained=0.0500 untrained=0.0500 chance=0.0500
+
+=============== bangla (csebuetnlp/banglabert) ===============
+  Memory-Aware Retrieval (bangla)...
+    auroc=0.7691 (n_items=15)
+  Predictive Head (bangla)...
+    epoch  0 val_recall@1=0.0455 (best=0.0455)
+    epoch  1 val_recall@1=0.0000 (best=0.0455)
+    trained=0.0455 untrained=0.0455 chance=0.0455
+
+=== Summary (specialist monolingual backbones) ===
+Memory-Aware Retrieval (AUROC, 0.5=chance):
+  english (roberta-base): 0.6324
+  bangla (csebuetnlp/banglabert): 0.7691
+Predictive Head (Recall@1):
+  english (roberta-base): trained=0.0500 untrained=0.0500 chance=0.0500
+  bangla (csebuetnlp/banglabert): trained=0.0455 untrained=0.0455 chance=0.0455
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\memory_predictive_specialist.json
+Total time: 114.4s

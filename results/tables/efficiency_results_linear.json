@@ -1,0 +1,72 @@
+{
+  "cognitive_xlmr": {
+    "ms_per_sentence": 74.32807339999272,
+    "ms_per_sentence_std": 7.614316005355041,
+    "ms_per_sentence_min": 68.49522500000603,
+    "ms_per_sentence_passes": [
+      79.56351799999538,
+      69.62404399997467,
+      68.78431799999817,
+      68.49522500000603,
+      85.17326199998934
+    ],
+    "total_params": 282474240,
+    "trainable_params": 4430592
+  },
+  "baseline_xlmr": {
+    "ms_per_sentence": 71.14880700000504,
+    "ms_per_sentence_std": 2.674789670139733,
+    "ms_per_sentence_min": 67.4009169999772,
+    "ms_per_sentence_passes": [
+      71.61448900002142,
+      72.77476600000227,
+      67.4009169999772,
+      74.25060000001395,
+      69.70326300001034
+    ],
+    "total_params": 278043648,
+    "trainable_params": 0
+  },
+  "linear_xlmr": {
+    "ms_per_sentence": 69.34714659999736,
+    "ms_per_sentence_std": 1.8827461482777417,
+    "ms_per_sentence_min": 67.92920600000798,
+    "ms_per_sentence_passes": [
+      68.80080299997644,
+      68.80916400001297,
+      72.65373499998532,
+      67.92920600000798,
+      68.54282500000409
+    ],
+    "total_params": 278634240,
+    "trainable_params": 590592
+  },
+  "cognitive_roberta_specialist": {
+    "ms_per_sentence": 69.38333599999896,
+    "ms_per_sentence_std": 2.1352018999384024,
+    "ms_per_sentence_min": 67.42666800000734,
+    "ms_per_sentence_passes": [
+      71.09560000000783,
+      72.22290599998814,
+      67.42666800000734,
+      68.23633500000142,
+      67.93517099999008
+    ],
+    "total_params": 129076224,
+    "trainable_params": 4430592
+  },
+  "linear_roberta_specialist": {
+    "ms_per_sentence": 70.76338980000583,
+    "ms_per_sentence_std": 6.406597845399082,
+    "ms_per_sentence_min": 65.7936139999947,
+    "ms_per_sentence_passes": [
+      65.79960900002334,
+      77.21095000000787,
+      65.7936139999947,
+      66.71013600000151,
+      78.3026400000017
+    ],
+    "total_params": 125236224,
+    "trainable_params": 590592
+  }
+}

@@ -1,0 +1,62 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/telugu-bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/hindi-bert-v2 and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+==================== english ====================
+  ours: dev raw=0.8023 dev whitened=0.7943 -> dev-based choice=raw
+           test raw=0.7383 test whitened=0.7179 -> current (test-based) choice=raw
+           dev-based test score=0.7383  current published score=0.7383  MATCH
+  linear: dev raw=0.7863 dev whitened=0.7242 -> dev-based choice=raw
+           test raw=0.7164 test whitened=0.6363 -> current (test-based) choice=raw
+           dev-based test score=0.7164  current published score=0.7164  MATCH
+
+==================== bangla ====================
+  ours: dev raw=0.8476 dev whitened=0.7461 -> dev-based choice=raw
+           test raw=0.8452 test whitened=0.8732 -> current (test-based) choice=devfit
+           dev-based test score=0.8452  current published score=0.8732  *** MISMATCH ***
+  linear: dev raw=0.8698 dev whitened=0.6990 -> dev-based choice=raw
+           test raw=0.8647 test whitened=0.8926 -> current (test-based) choice=devfit
+           dev-based test score=0.8647  current published score=0.8926  *** MISMATCH ***
+
+==================== telugu ====================
+  ours: dev raw=0.7597 dev whitened=0.6426 -> dev-based choice=raw
+           test raw=0.7768 test whitened=0.6876 -> current (test-based) choice=raw
+           dev-based test score=0.7768  current published score=0.7768  MATCH
+  linear: dev raw=0.7876 dev whitened=0.6913 -> dev-based choice=raw
+           test raw=0.7912 test whitened=0.6988 -> current (test-based) choice=raw
+           dev-based test score=0.7912  current published score=0.7912  MATCH
+
+==================== hindi ====================
+  ours: dev raw=0.7175 dev whitened=0.6980 -> dev-based choice=raw
+           test raw=0.6777 test whitened=0.6420 -> current (test-based) choice=raw
+           dev-based test score=0.6777  current published score=0.6777  MATCH
+  linear: dev raw=0.7245 dev whitened=0.6318 -> dev-based choice=raw
+           test raw=0.7061 test whitened=0.6349 -> current (test-based) choice=raw
+           dev-based test score=0.7061  current published score=0.7061  MATCH
+
+==================== arabic ====================
+  ours: dev raw=0.5962 dev whitened=0.4621 -> dev-based choice=raw
+           test raw=0.4149 test whitened=0.3931 -> current (test-based) choice=raw
+           dev-based test score=0.4149  current published score=0.4149  MATCH
+  linear: dev raw=0.5435 dev whitened=0.5090 -> dev-based choice=raw
+           test raw=0.4526 test whitened=0.4251 -> current (test-based) choice=raw
+           dev-based test score=0.4526  current published score=0.4526  MATCH
+
+=== Summary: does dev-based selection agree with the currently-published test-based selection? ===
+  english ours: MATCH  (dev-based=raw, current=raw, score diff=+0.0000)
+  english linear: MATCH  (dev-based=raw, current=raw, score diff=+0.0000)
+  bangla ours: MISMATCH  (dev-based=raw, current=devfit, score diff=-0.0279)
+  bangla linear: MISMATCH  (dev-based=raw, current=devfit, score diff=-0.0279)
+  telugu ours: MATCH  (dev-based=raw, current=raw, score diff=+0.0000)
+  telugu linear: MATCH  (dev-based=raw, current=raw, score diff=+0.0000)
+  hindi ours: MATCH  (dev-based=raw, current=raw, score diff=+0.0000)
+  hindi linear: MATCH  (dev-based=raw, current=raw, score diff=+0.0000)
+  arabic ours: MATCH  (dev-based=raw, current=raw, score diff=+0.0000)
+  arabic linear: MATCH  (dev-based=raw, current=raw, score diff=+0.0000)
+
+All selections match: False
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\devbased_selection_check.json
+DONE_DEVBASED_SELECTION_CHECK

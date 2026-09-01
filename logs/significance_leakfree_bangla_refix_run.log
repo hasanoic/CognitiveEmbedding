@@ -1,0 +1,16 @@
+Resuming: ['english', 'telugu', 'hindi', 'arabic'] already done, skipping.
+
+==================== bangla ====================
+  dev n=500  test n=1394
+  ours [raw]: reproduced=0.8452 (published=0.8452)
+    95% CI: [+0.8242, +0.8648]
+  linear [raw]: reproduced=0.8647 (published=0.8647)
+    95% CI: [+0.8453, +0.8834]
+  margin (ours-linear) 95% CI: [-0.0334, -0.0054]  SIGNIFICANT
+
+=== Summary (leak-free protocol, matches current Table 5) ===
+  english: ours CI=[+0.7114,+0.7631]  linear CI=[+0.6870,+0.7436]  margin CI=[+0.0013,+0.0432]  SIG
+  telugu: ours CI=[+0.7220,+0.8205]  linear CI=[+0.7362,+0.8342]  margin CI=[-0.0450,+0.0166]  ns
+  hindi: ours CI=[+0.6384,+0.7139]  linear CI=[+0.6696,+0.7382]  margin CI=[-0.0550,-0.0010]  SIG
+  arabic: ours CI=[+0.3442,+0.4818]  linear CI=[+0.3826,+0.5173]  margin CI=[-0.0965,+0.0190]  ns
+  bangla: ours CI=[+0.8242,+0.8648]  linear CI=[+0.8453,+0.8834]  margin CI=[-0.0334,-0.0054]  SIG

@@ -1,0 +1,33 @@
+# Trained model checkpoints -- large binaries, reproducible by re-running
+# scripts/train*.py (see README for the exact commands per checkpoint).
+results/*.pt
+results/**/*.pt
+
+# Downloaded/raw datasets -- reproducible by re-running the loaders in
+# src/cogembed/data/loaders.py, which fetch everything from HuggingFace
+# directly, EXCEPT BnPC (data/raw/BnPC/), which is Kaggle-hosted and must
+# be obtained manually -- see README's Data section.
+data/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.synctex.gz
+paper/*.fls
+paper/*.fdb_latexmk
+paper/comment.cut

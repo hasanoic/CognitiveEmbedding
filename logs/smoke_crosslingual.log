@@ -1,0 +1,21 @@
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\User\.cache\huggingface\hub\datasets--mteb--flores. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Loading frozen backbone + existing core_model.pt...
+Caching FLORES dev parallel pairs (EN-BN, EN-TE, EN-HI, EN-AR)...
+  bangla: train=18 val=2
+  telugu: train=18 val=2
+  hindi: train=18 val=2
+  arabic: train=18 val=2
+Caching done at 27.8s
+
+Traceback (most recent call last):
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\train_crosslingual.py", line 196, in <module>
+    main()
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\train_crosslingual.py", line 163, in main
+    r1s.append(recall_at_1(cosine_sim_np(v1, v2)))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\train_crosslingual.py", line 98, in recall_at_1
+    preds = sims.argmax(axis=1)
+            ^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1

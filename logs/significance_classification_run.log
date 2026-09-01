@@ -1,0 +1,108 @@
+Loading MASSIVE intent classification (en/bn/ar/hi)...
+  en: train=3000 test=2974
+  bn: train=3000 test=2974
+  ar: train=3000 test=2974
+  hi: train=3000 test=2974
+
+Loading trained cross-lingual checkpoints (inference only, no training)...
+
+========== embedding with ours ==========
+  en...
+  bn...
+  ar...
+  hi...
+
+========== embedding with linear ==========
+  en...
+  bn...
+  ar...
+  hi...
+
+==================== en: significance ====================
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+  monolingual ours: acc=0.3228 (paper: 0.3230)
+  monolingual linear: acc=0.3396 (paper: 0.3400)
+  monolingual margin: -0.0168  95% CI=[-0.0259, -0.0077]  SIGNIFICANT
+
+==================== bn: significance ====================
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+  monolingual ours: acc=0.2952 (paper: 0.2950)
+  monolingual linear: acc=0.3077 (paper: 0.3080)
+  monolingual margin: -0.0124  95% CI=[-0.0212, -0.0034]  SIGNIFICANT
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+  zero-shot ours: acc=0.1527 (paper: 0.1530)
+  zero-shot linear: acc=0.2095 (paper: 0.2100)
+  zero-shot margin: -0.0568  95% CI=[-0.0693, -0.0444]  SIGNIFICANT
+
+==================== ar: significance ====================
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+  monolingual ours: acc=0.2798 (paper: 0.2800)
+  monolingual linear: acc=0.2966 (paper: 0.2970)
+  monolingual margin: -0.0168  95% CI=[-0.0256, -0.0081]  SIGNIFICANT
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+  zero-shot ours: acc=0.1661 (paper: 0.1660)
+  zero-shot linear: acc=0.1997 (paper: 0.2000)
+  zero-shot margin: -0.0336  95% CI=[-0.0447, -0.0225]  SIGNIFICANT
+
+==================== hi: significance ====================
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+  monolingual ours: acc=0.3151 (paper: 0.3150)
+  monolingual linear: acc=0.3188 (paper: 0.3190)
+  monolingual margin: -0.0036  95% CI=[-0.0121, +0.0050]  not significant
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+  zero-shot ours: acc=0.1833 (paper: 0.1830)
+  zero-shot linear: acc=0.2219 (paper: 0.2220)
+  zero-shot margin: -0.0386  95% CI=[-0.0498, -0.0279]  SIGNIFICANT
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\significance_classification.json
+Total time: 3605.8s
+DONE_CLASSIFICATION_SIG

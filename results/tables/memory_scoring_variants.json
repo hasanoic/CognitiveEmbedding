@@ -1,0 +1,22 @@
+{
+  "n_documents": 500,
+  "n_train": 181,
+  "n_val": 38,
+  "n_test": 38,
+  "content_only": {
+    "auroc": 0.7004155124653739,
+    "trainable_params": 0
+  },
+  "fixed_decay": {
+    "auroc": 0.5574238227146814,
+    "trainable_params": 0
+  },
+  "learned_decay": {
+    "auroc": 0.5562049861495844,
+    "trainable_params": 2
+  },
+  "coala_inspired": {
+    "auroc": 0.6370637119113574,
+    "trainable_params": 984577
+  }
+}

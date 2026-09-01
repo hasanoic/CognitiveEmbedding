@@ -1,0 +1,35 @@
+Loading frozen backbone (xlm-roberta-base)...
+Caching NLI triplets...
+  NLI train/val: 5700/300
+Caching EN/BN/TE train+val...
+  EN train/val: 1146/500  BN: 2200/500  TE: 552/130
+Caching done at 2348.3s
+
+=== Stage 0: NLI pretrain (Matryoshka, linear head) ===
+[nli] epoch  0 train_loss=1.1428 val_loss=1.6277 (best=1.6277)
+[nli] epoch  1 train_loss=0.5719 val_loss=1.5459 (best=1.5459)
+[nli] epoch  2 train_loss=0.3808 val_loss=1.6013 (best=1.5459)
+[nli] epoch  3 train_loss=0.2947 val_loss=1.5367 (best=1.5367)
+[nli] epoch  4 train_loss=0.2304 val_loss=1.5355 (best=1.5355)
+[nli] epoch  5 train_loss=0.1981 val_loss=1.4540 (best=1.4540)
+
+=== Stage 1: multilingual joint fine-tune (Matryoshka, linear head) ===
+[multi] epoch  0 val en=0.7578 bn=0.8875 te=0.7168 macro=0.7874 (best=0.7874)
+[multi] epoch  1 val en=0.7787 bn=0.8727 te=0.7245 macro=0.7920 (best=0.7920)
+[multi] epoch  2 val en=0.7789 bn=0.8745 te=0.7492 macro=0.8009 (best=0.8009)
+[multi] epoch  3 val en=0.7764 bn=0.8811 te=0.7304 macro=0.7960 (best=0.8009)
+[multi] epoch  4 val en=0.7736 bn=0.8987 te=0.7217 macro=0.7980 (best=0.8009)
+[multi] epoch  5 val en=0.7807 bn=0.8860 te=0.7685 macro=0.8117 (best=0.8117)
+[multi] epoch  6 val en=0.7744 bn=0.8897 te=0.7767 macro=0.8136 (best=0.8136)
+[multi] epoch  7 val en=0.7811 bn=0.8947 te=0.7700 macro=0.8153 (best=0.8153)
+[multi] epoch  8 val en=0.7806 bn=0.8870 te=0.7755 macro=0.8143 (best=0.8153)
+[multi] epoch  9 val en=0.7679 bn=0.8713 te=0.7840 macro=0.8077 (best=0.8153)
+[multi] epoch 10 val en=0.7661 bn=0.8775 te=0.7642 macro=0.8026 (best=0.8153)
+[multi] epoch 11 val en=0.7762 bn=0.8895 te=0.7868 macro=0.8175 (best=0.8175)
+[multi] epoch 12 val en=0.7837 bn=0.8834 te=0.7735 macro=0.8135 (best=0.8175)
+[multi] epoch 13 val en=0.7765 bn=0.8851 te=0.7828 macro=0.8148 (best=0.8175)
+[multi] epoch 14 val en=0.7822 bn=0.8957 te=0.7813 macro=0.8197 (best=0.8197)
+
+Total time: 2510.7s
+Best macro val (768-dim): 0.8197
+Saved to E:\CognitiveEmbedding\cognitive-embedding\results\core_model_matryoshka_linear.pt

@@ -1,0 +1,46 @@
+Loading frozen backbone + trained predictive head...
+Train/val/test: 1178/500/1379
+Caching token features (shared across both arms)...
+Caching done at 462.7s
+
+=== Arm 1: baseline (attention + composition) ===
+  [baseline] epoch  0 val_spearman=0.6701 (best=0.6701)
+  [baseline] epoch  1 val_spearman=0.6881 (best=0.6881)
+  [baseline] epoch  2 val_spearman=0.6681 (best=0.6881)
+  [baseline] epoch  3 val_spearman=0.6874 (best=0.6881)
+  [baseline] epoch  4 val_spearman=0.6987 (best=0.6987)
+  [baseline] epoch  5 val_spearman=0.6994 (best=0.6994)
+  [baseline] epoch  6 val_spearman=0.7143 (best=0.7143)
+  [baseline] epoch  7 val_spearman=0.7133 (best=0.7143)
+  [baseline] epoch  8 val_spearman=0.7146 (best=0.7146)
+  [baseline] epoch  9 val_spearman=0.7308 (best=0.7308)
+  [baseline] epoch 10 val_spearman=0.7175 (best=0.7308)
+  [baseline] epoch 11 val_spearman=0.7226 (best=0.7308)
+  [baseline] epoch 12 val_spearman=0.7321 (best=0.7321)
+  [baseline] epoch 13 val_spearman=0.7319 (best=0.7321)
+  [baseline] epoch 14 val_spearman=0.7184 (best=0.7321)
+
+=== Arm 2: fused (attention + composition + frozen predictive view) ===
+  [fused] epoch  0 val_spearman=0.6266 (best=0.6266)
+  [fused] epoch  1 val_spearman=0.6798 (best=0.6798)
+  [fused] epoch  2 val_spearman=0.6852 (best=0.6852)
+  [fused] epoch  3 val_spearman=0.6861 (best=0.6861)
+  [fused] epoch  4 val_spearman=0.7049 (best=0.7049)
+  [fused] epoch  5 val_spearman=0.6988 (best=0.7049)
+  [fused] epoch  6 val_spearman=0.7160 (best=0.7160)
+  [fused] epoch  7 val_spearman=0.7141 (best=0.7160)
+  [fused] epoch  8 val_spearman=0.7047 (best=0.7160)
+  [fused] epoch  9 val_spearman=0.7097 (best=0.7160)
+  [fused] epoch 10 val_spearman=0.7183 (best=0.7183)
+  [fused] epoch 11 val_spearman=0.7201 (best=0.7201)
+  [fused] epoch 12 val_spearman=0.7229 (best=0.7229)
+  [fused] epoch 13 val_spearman=0.7142 (best=0.7229)
+  [fused] epoch 14 val_spearman=0.7260 (best=0.7260)
+
+=== Summary ===
+  baseline: test_raw=0.6064 test_whitened=0.7019 best=0.7019
+  fused:    test_raw=0.6167 test_whitened=0.6999 best=0.6999
+  delta (fused - baseline, best-of): -0.0020
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\ablation_predictive_fusion.json
+Total time: 2038.0s

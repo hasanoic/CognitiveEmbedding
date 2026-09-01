@@ -1,0 +1,125 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/telugu-bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/hindi-bert-v2 and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+==================== english: caching (once, shared across heads and seeds) ====================
+  caching done at 1349.0s
+  english ours seed=42 (published checkpoint, leak-free eval): 0.7383
+  english ours seed=123: 0.7474  (2854.6s)
+  english ours seed=2024: 0.7422  (2919.1s)
+  english ours: mean=0.7426 std=0.0037 range=[0.7383, 0.7474] over seeds [42, 123, 2024]  (5791.8s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  english linear seed=42 (published checkpoint, leak-free eval): 0.7164
+  english linear seed=123: 0.7247  (58.8s)
+  english linear seed=2024: 0.7202  (50.0s)
+  english linear: mean=0.7204 std=0.0034 range=[0.7164, 0.7247] over seeds [42, 123, 2024]  (109.8s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  english total: 7250.7s
+
+==================== bangla: caching (once, shared across heads and seeds) ====================
+  caching done at 418.4s
+  bangla ours seed=42 (published checkpoint, leak-free eval): 0.8839
+  bangla ours seed=123: 0.8715  (1278.4s)
+  bangla ours seed=2024: 0.8739  (1143.0s)
+  bangla ours: mean=0.8764 std=0.0054 range=[0.8715, 0.8839] over seeds [42, 123, 2024]  (2433.8s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  bangla linear seed=42 (published checkpoint, leak-free eval): 0.8865
+  bangla linear seed=123: 0.8895  (22.5s)
+  bangla linear seed=2024: 0.8887  (22.5s)
+  bangla linear: mean=0.8882 std=0.0013 range=[0.8865, 0.8895] over seeds [42, 123, 2024]  (50.4s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  bangla total: 2902.6s
+
+==================== telugu: caching (once, shared across heads and seeds) ====================
+  caching done at 98.3s
+  telugu ours seed=42 (published checkpoint, leak-free eval): 0.7768
+  telugu ours seed=123: 0.7506  (437.5s)
+  telugu ours seed=2024: 0.7558  (439.9s)
+  telugu ours: mean=0.7611 std=0.0113 range=[0.7506, 0.7768] over seeds [42, 123, 2024]  (880.9s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  telugu linear seed=42 (published checkpoint, leak-free eval): 0.7912
+  telugu linear seed=123: 0.8025  (6.4s)
+  telugu linear seed=2024: 0.7974  (6.1s)
+  telugu linear: mean=0.7970 std=0.0046 range=[0.7912, 0.8025] over seeds [42, 123, 2024]  (13.0s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  telugu total: 992.2s
+
+==================== hindi: caching (once, shared across heads and seeds) ====================
+  caching done at 980.5s
+  hindi ours seed=42 (published checkpoint, leak-free eval): 0.6777
+  hindi ours seed=123: 0.6979  (2450.1s)
+  hindi ours seed=2024: 0.6832  (2436.5s)
+  hindi ours: mean=0.6863 std=0.0085 range=[0.6777, 0.6979] over seeds [42, 123, 2024]  (4895.2s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  hindi linear seed=42 (published checkpoint, leak-free eval): 0.7061
+  hindi linear seed=123: 0.7119  (30.2s)
+  hindi linear seed=2024: 0.7063  (30.4s)
+  hindi linear: mean=0.7081 std=0.0027 range=[0.7061, 0.7119] over seeds [42, 123, 2024]  (65.6s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  hindi total: 5941.3s
+
+==================== arabic: caching (once, shared across heads and seeds) ====================
+  caching done at 909.7s
+  arabic ours seed=42 (published checkpoint, leak-free eval): 0.4149
+  arabic ours seed=123: 0.4460  (2216.6s)
+  arabic ours seed=2024: 0.3803  (2237.5s)
+  arabic ours: mean=0.4137 std=0.0268 range=[0.3803, 0.4460] over seeds [42, 123, 2024]  (4458.2s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  arabic linear seed=42 (published checkpoint, leak-free eval): 0.4526
+  arabic linear seed=123: 0.4366  (30.8s)
+  arabic linear seed=2024: 0.4399  (30.7s)
+  arabic linear: mean=0.4430 std=0.0069 range=[0.4366, 0.4526] over seeds [42, 123, 2024]  (62.1s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  arabic total: 5430.0s
+
+Total time: 22516.8s
+DONE_MULTISEED_FAIR_BASELINE_LEAKFREE
+Resuming: {'english': ['seed_42_published', 'ours', 'linear'], 'telugu': ['seed_42_published', 'ours', 'linear'], 'hindi': ['seed_42_published', 'ours', 'linear'], 'arabic': ['seed_42_published', 'ours', 'linear']}
+english: both heads already done, skipping.
+
+==================== bangla: caching (once, shared across heads and seeds) ====================
+  caching done at 403.7s
+  bangla ours seed=42 (published checkpoint, leak-free eval): 0.8732
+  bangla ours seed=123: 0.8685  (1219.4s)
+  bangla ours seed=2024: 0.8809  (1170.9s)
+  bangla ours: mean=0.8742 std=0.0051 range=[0.8685, 0.8809] over seeds [42, 123, 2024]  (2400.0s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  bangla linear seed=42 (published checkpoint, leak-free eval): 0.8926
+  bangla linear seed=123: 0.8911  (23.6s)
+  bangla linear seed=2024: 0.8946  (23.4s)
+  bangla linear: mean=0.8927 std=0.0015 range=[0.8911, 0.8946] over seeds [42, 123, 2024]  (54.1s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  bangla total: 2857.9s
+telugu: both heads already done, skipping.
+hindi: both heads already done, skipping.
+arabic: both heads already done, skipping.
+
+Total time: 2857.9s
+DONE_MULTISEED_FAIR_BASELINE_LEAKFREE
+Resuming: {'english': ['seed_42_published', 'ours', 'linear'], 'telugu': ['seed_42_published', 'ours', 'linear'], 'hindi': ['seed_42_published', 'ours', 'linear'], 'arabic': ['seed_42_published', 'ours', 'linear']}
+english: both heads already done, skipping.
+
+==================== bangla: caching (once, shared across heads and seeds) ====================
+  caching done at 427.0s
+  bangla ours seed=42 (published checkpoint, leak-free eval): 0.8452
+  bangla ours seed=123: 0.8413  (1194.7s)
+  bangla ours seed=2024: 0.8431  (1193.6s)
+  bangla ours: mean=0.8432 std=0.0016 range=[0.8413, 0.8452] over seeds [42, 123, 2024]  (2396.1s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  bangla linear seed=42 (published checkpoint, leak-free eval): 0.8647
+  bangla linear seed=123: 0.8686  (24.5s)
+  bangla linear seed=2024: 0.8825  (24.3s)
+  bangla linear: mean=0.8719 std=0.0076 range=[0.8647, 0.8825] over seeds [42, 123, 2024]  (52.5s)
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results_leakfree.json)
+  bangla total: 2875.7s
+telugu: both heads already done, skipping.
+hindi: both heads already done, skipping.
+arabic: both heads already done, skipping.
+
+Total time: 2875.7s
+DONE_MULTISEED_FAIR_BASELINE_LEAKFREE

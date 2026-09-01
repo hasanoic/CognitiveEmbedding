@@ -1,0 +1,43 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/telugu-bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/hindi-bert-v2 and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+==================== english (roberta-base) ====================
+    [nli] epoch 0 val_loss=1.0847 (best=1.0847)
+    [nli] epoch 1 val_loss=1.3461 (best=1.0847)
+    [task] epoch 0 val_score=0.1843 (best=0.1843)
+    [task] epoch 1 val_score=0.1538 (best=0.1843)
+  english: baseline=0.7652 ours_raw=0.4176 ours_whitened=0.7294 best=0.7294  (39.2s)
+
+==================== bangla (csebuetnlp/banglabert) ====================
+    [task] epoch 0 val_score=0.5556 (best=0.5556)
+    [task] epoch 1 val_score=0.5278 (best=0.5556)
+  bangla: baseline=0.7000 ours_raw=0.2800 ours_whitened=0.6800 best=0.6800  (15.6s)
+
+==================== telugu (l3cube-pune/telugu-bert) ====================
+    [task] epoch 0 val_score=0.6331 (best=0.6331)
+    [task] epoch 1 val_score=0.6984 (best=0.6984)
+  telugu: baseline=0.7464 ours_raw=0.7929 ours_whitened=0.2393 best=0.7929  (212.0s)
+
+==================== hindi (l3cube-pune/hindi-bert-v2) ====================
+    [nli] epoch 0 val_loss=0.6609 (best=0.6609)
+    [nli] epoch 1 val_loss=0.5032 (best=0.5032)
+  hindi: baseline=0.6297 ours_raw=0.3077 ours_whitened=0.6386 best=0.6386  (24.2s)
+
+==================== arabic (aubmindlab/bert-base-arabertv2) ====================
+    [nli] epoch 0 val_loss=1.7854 (best=1.7854)
+    [nli] epoch 1 val_loss=0.5955 (best=0.5955)
+  arabic: baseline=-0.0519 ours_raw=-0.0842 ours_whitened=0.2739 best=0.2739  (21.3s)
+
+=== Specialist-backbone summary ===
+  english (roberta-base): baseline=0.7652 ours=0.7294 delta=-0.0358
+  bangla (csebuetnlp/banglabert): baseline=0.7000 ours=0.6800 delta=-0.0200
+  telugu (l3cube-pune/telugu-bert): baseline=0.7464 ours=0.7929 delta=+0.0464
+  hindi (l3cube-pune/hindi-bert-v2): baseline=0.6297 ours=0.6386 delta=+0.0089
+  arabic (aubmindlab/bert-base-arabertv2): baseline=-0.0519 ours=0.2739 delta=+0.3259
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\specialist_backbone_results.json
+Total time: 312.6s

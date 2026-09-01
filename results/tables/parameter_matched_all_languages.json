@@ -1,0 +1,38 @@
+{
+  "telugu": {
+    "n_params_matched": 589280,
+    "n_params_linear": 590592,
+    "n_params_full_structured": 4430592,
+    "parameter_matched": {
+      "raw": 0.7758102132501598,
+      "whitened": 0.7792530651313349,
+      "best": 0.7792530651313349
+    },
+    "full_capacity_structured_published": 0.7767991540693114,
+    "linear_published": 0.7912023658050895
+  },
+  "hindi": {
+    "n_params_matched": 589280,
+    "n_params_linear": 590592,
+    "n_params_full_structured": 4430592,
+    "parameter_matched": {
+      "raw": 0.731346945851719,
+      "whitened": 0.7213238210681296,
+      "best": 0.731346945851719
+    },
+    "full_capacity_structured_published": 0.6980004661954695,
+    "linear_published": 0.7060653171855318
+  },
+  "arabic": {
+    "n_params_matched": 589280,
+    "n_params_linear": 590592,
+    "n_params_full_structured": 4430592,
+    "parameter_matched": {
+      "raw": 0.4573026881167382,
+      "whitened": 0.47938409546107585,
+      "best": 0.47938409546107585
+    },
+    "full_capacity_structured_published": 0.4217035514919273,
+    "linear_published": 0.4638465810583845
+  }
+}

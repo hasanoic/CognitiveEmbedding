@@ -1,0 +1,64 @@
+
+==================== english: caching (once, shared across heads and seeds) ====================
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  caching done at 2012.9s
+  english ours seed=123: 0.7415  (2771.9s)
+  english ours seed=2024: 0.7351  (2425.6s)
+  english ours: mean=0.7383 std=0.0026 range=[0.7351, 0.7415] over seeds [42, 123, 2024]
+  english linear seed=123: 0.7247  (55.3s)
+  english linear seed=2024: 0.7202  (55.3s)
+  english linear: mean=0.7204 std=0.0034 range=[0.7164, 0.7247] over seeds [42, 123, 2024]
+  english total: 7320.9s
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results.json)
+
+==================== bangla: caching (once, shared across heads and seeds) ====================
+  caching done at 518.7s
+  bangla ours seed=123: 0.8291  (1077.9s)
+  bangla ours seed=2024: 0.8437  (1077.4s)
+  bangla ours: mean=0.8393 std=0.0073 range=[0.8291, 0.8452] over seeds [42, 123, 2024]
+  bangla linear seed=123: 0.8686  (29.9s)
+  bangla linear seed=2024: 0.8825  (30.1s)
+  bangla linear: mean=0.8719 std=0.0076 range=[0.8647, 0.8825] over seeds [42, 123, 2024]
+  bangla total: 2734.0s
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results.json)
+
+==================== telugu: caching (once, shared across heads and seeds) ====================
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/telugu-bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  caching done at 174.6s
+  telugu ours seed=123: 0.7493  (410.7s)
+  telugu ours seed=2024: 0.7558  (410.5s)
+  telugu ours: mean=0.7606 std=0.0117 range=[0.7493, 0.7768] over seeds [42, 123, 2024]
+  telugu linear seed=123: 0.8025  (7.9s)
+  telugu linear seed=2024: 0.7974  (7.9s)
+  telugu linear: mean=0.7970 std=0.0046 range=[0.7912, 0.8025] over seeds [42, 123, 2024]
+  telugu total: 1011.7s
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results.json)
+
+==================== hindi: caching (once, shared across heads and seeds) ====================
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/hindi-bert-v2 and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  caching done at 1671.6s
+  hindi ours seed=123: 0.7119  (2285.2s)
+  hindi ours seed=2024: 0.7164  (2284.5s)
+  hindi ours: mean=0.7088 std=0.0078 range=[0.6980, 0.7164] over seeds [42, 123, 2024]
+  hindi linear seed=123: 0.7119  (40.5s)
+  hindi linear seed=2024: 0.7063  (40.7s)
+  hindi linear: mean=0.7081 std=0.0027 range=[0.7061, 0.7119] over seeds [42, 123, 2024]
+  hindi total: 6322.5s
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results.json)
+
+==================== arabic: caching (once, shared across heads and seeds) ====================
+  caching done at 1496.4s
+  arabic ours seed=123: 0.4636  (2088.7s)
+  arabic ours seed=2024: 0.3999  (2082.5s)
+  arabic ours: mean=0.4284 std=0.0264 range=[0.3999, 0.4636] over seeds [42, 123, 2024]
+  arabic linear seed=123: 0.4624  (40.7s)
+  arabic linear seed=2024: 0.4792  (40.8s)
+  arabic linear: mean=0.4647 std=0.0110 range=[0.4526, 0.4792] over seeds [42, 123, 2024]
+  arabic total: 5749.2s
+  (partial results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\multi_seed_fair_baseline_results.json)
+
+Total time: 23138.5s
+DONE_MULTISEED_FAIR_BASELINE

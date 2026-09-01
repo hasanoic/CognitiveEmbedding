@@ -1,0 +1,86 @@
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+Loading MASSIVE intent classification (en/bn/ar/hi)...
+  en: train=3000 test=2974
+  bn: train=3000 test=2974
+  ar: train=3000 test=2974
+  hi: train=3000 test=2974
+
+Loading our trained cross-lingual core model...
+Loading LaBSE (reference baseline)...
+
+=============== ours ===============
+  embedding en...
+  embedding bn...
+  embedding ar...
+  embedding hi...
+    monolingual en: acc=0.3228
+    monolingual bn: acc=0.2952
+    monolingual ar: acc=0.2798
+    monolingual hi: acc=0.3151
+    zero-shot (EN classifier) -> en: acc=0.3228
+    zero-shot (EN classifier) -> bn: acc=0.1527
+    zero-shot (EN classifier) -> ar: acc=0.1661
+    zero-shot (EN classifier) -> hi: acc=0.1833
+
+=============== labse ===============
+  embedding en...
+  embedding bn...
+  embedding ar...
+  embedding hi...
+    monolingual en: acc=0.3275
+    monolingual bn: acc=0.3167
+    monolingual ar: acc=0.2912
+    monolingual hi: acc=0.3235
+    zero-shot (EN classifier) -> en: acc=0.3275
+    zero-shot (EN classifier) -> bn: acc=0.3117
+    zero-shot (EN classifier) -> ar: acc=0.2364
+    zero-shot (EN classifier) -> hi: acc=0.3201
+
+=== Summary ===
+lang  ours_mono   ours_zs   labse_mono  labse_zs  
+en    0.3228      0.3228    0.3275      0.3275    
+bn    0.2952      0.1527    0.3167      0.3117    
+ar    0.2798      0.1661    0.2912      0.2364    
+hi    0.3151      0.1833    0.3235      0.3201    
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\classification_results.json
+Total time: 3778.4s

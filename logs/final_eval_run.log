@@ -1,0 +1,17 @@
+Loading frozen backbone + trained checkpoints (if present)...
+Loaded trained core from E:\CognitiveEmbedding\cognitive-embedding\results\core_model.pt
+
+=== Evaluating core embedding (EN STS-B + BN paraphrase) ===
+  en_stsb_spearman: 0.6063596919301736
+  en_stsb_spearman_whitened: 0.7019180626608398
+  bn_paraphrase_auroc: 0.997725
+  bn_paraphrase_auroc_whitened: 0.997825
+  n_en_test_pairs: 1379
+  n_bn_test_pairs: 400
+
+=== Evaluating Memory-Aware Retrieval (content-only, zero-parameter, recommended config) ===
+  memory_content_only_auroc: 0.6814065314433393
+  n_retrieval_items: 113
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\full_pipeline_results.json
+Total runtime: 502.7s

@@ -1,0 +1,18 @@
+{
+  "protocol": "leak-free (whitening fit on dev split, never test)",
+  "n_params_matched": 589280,
+  "n_params_linear": 590592,
+  "n_params_full_structured": 4430592,
+  "config": {
+    "k_heads": 2,
+    "gru_hidden": 52,
+    "bottleneck": 104
+  },
+  "parameter_matched": {
+    "raw": 0.8581542475203912,
+    "whitened": 0.8862050547631258,
+    "best": 0.8581542475203912
+  },
+  "full_capacity_structured_published": 0.8452311286928136,
+  "linear_published": 0.864655174248244
+}

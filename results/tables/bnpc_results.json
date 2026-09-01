@@ -1,0 +1,11 @@
+{
+  "bnpc_ours": {
+    "raw_auroc": 0.8240451298376577,
+    "whitened_auroc": 0.7056771922806018,
+    "n_pairs": 1394
+  },
+  "bnpc_labse": {
+    "raw_auroc": 0.8820448872498845,
+    "n_pairs": 1394
+  }
+}

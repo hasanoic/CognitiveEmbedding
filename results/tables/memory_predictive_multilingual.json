@@ -1,0 +1,28 @@
+{
+  "memory": {
+    "english": {
+      "auroc": 0.6836397220245575,
+      "n_retrieval_items": 257
+    },
+    "bangla": {
+      "auroc": 0.6493751565734478,
+      "n_retrieval_items": 477
+    }
+  },
+  "predictive": {
+    "english": {
+      "untrained_recall@1": 0.02150537632405758,
+      "trained_recall@1": 0.019354838877916336,
+      "chance_recall@1": 0.002150537634408602,
+      "n_train_pairs": 2523,
+      "n_val_pairs": 465
+    },
+    "bangla": {
+      "untrained_recall@1": 0.0,
+      "trained_recall@1": 0.014314928092062473,
+      "chance_recall@1": 0.002044989775051125,
+      "n_train_pairs": 2707,
+      "n_val_pairs": 489
+    }
+  }
+}

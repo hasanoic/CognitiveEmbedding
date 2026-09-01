@@ -1,0 +1,19 @@
+Loading bangla backbone and caching data (once, shared across batch sizes and heads)...
+  train/val/test: 2200/500/1394
+  caching done at 517.2s
+
+  ours batch_size=64: AUROC=0.8477  (1071.0s)
+  ours batch_size=128: AUROC=0.8687  (1073.0s)
+  ours full sweep: bs32=0.8452, bs64=0.8477, bs128=0.8687
+  linear batch_size=64: AUROC=0.8792  (27.6s)
+  linear batch_size=128: AUROC=0.8840  (26.3s)
+  linear full sweep: bs32=0.8647, bs64=0.8792, bs128=0.8840
+
+=== Summary: does the structured head close the gap with more negatives? ===
+  batch_size=32: ours=0.8452 linear=0.8647 gap(ours-linear)=-0.0194
+  batch_size=64: ours=0.8477 linear=0.8792 gap(ours-linear)=-0.0315
+  batch_size=128: ours=0.8687 linear=0.8840 gap(ours-linear)=-0.0154
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\batch_size_sweep_bangla.json
+Total time: 2715.1s
+DONE_BATCH_SIZE_SWEEP

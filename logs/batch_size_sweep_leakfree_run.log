@@ -1,0 +1,42 @@
+Loading bangla backbone and caching data (once, shared across batch sizes and heads)...
+  train/val/dev/test: 2200/500/500/1394
+  caching done at 458.2s
+
+Resuming: ours=['32'] linear=[] already done.
+  ours batch_size=64: AUROC=0.8768  (1183.6s)
+  ours batch_size=128: AUROC=0.8890  (1364.8s)
+  ours full sweep: bs32=0.8732, bs64=0.8768, bs128=0.8890
+  linear batch_size=32 (published checkpoint, leak-free eval): AUROC=0.8926
+  linear batch_size=64: AUROC=0.8924  (24.9s)
+  linear batch_size=128: AUROC=0.8866  (23.3s)
+  linear full sweep: bs32=0.8926, bs64=0.8924, bs128=0.8866
+
+=== Summary: does the structured head close the gap with more negatives? (leak-free protocol) ===
+  batch_size=32: ours=0.8732 linear=0.8926 gap(ours-linear)=-0.0194
+  batch_size=64: ours=0.8768 linear=0.8924 gap(ours-linear)=-0.0156
+  batch_size=128: ours=0.8890 linear=0.8866 gap(ours-linear)=+0.0023
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\batch_size_sweep_bangla_leakfree.json
+Total time: 3055.8s
+DONE_BATCH_SIZE_SWEEP_LEAKFREE
+Loading bangla backbone and caching data (once, shared across batch sizes and heads)...
+  train/val/dev/test: 2200/500/500/1394
+  caching done at 518.7s
+
+  ours batch_size=32 (published checkpoint, leak-free eval): AUROC=0.8452
+  ours batch_size=64: AUROC=0.8768  (1472.8s)
+  ours batch_size=128: AUROC=0.8688  (1296.9s)
+  ours full sweep: bs32=0.8452, bs64=0.8768, bs128=0.8688
+  linear batch_size=32 (published checkpoint, leak-free eval): AUROC=0.8647
+  linear batch_size=64: AUROC=0.8792  (22.6s)
+  linear batch_size=128: AUROC=0.8840  (20.3s)
+  linear full sweep: bs32=0.8647, bs64=0.8792, bs128=0.8840
+
+=== Summary: does the structured head close the gap with more negatives? (leak-free protocol) ===
+  batch_size=32: ours=0.8452 linear=0.8647 gap(ours-linear)=-0.0194
+  batch_size=64: ours=0.8768 linear=0.8792 gap(ours-linear)=-0.0024
+  batch_size=128: ours=0.8688 linear=0.8840 gap(ours-linear)=-0.0153
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\batch_size_sweep_bangla_leakfree.json
+Total time: 3342.7s
+DONE_BATCH_SIZE_SWEEP_LEAKFREE

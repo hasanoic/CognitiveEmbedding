@@ -1,0 +1,82 @@
+{
+  "english": {
+    "ours": {
+      "raw": 0.7383233475152673,
+      "test_fit_whitened_leakage": 0.7359030508585737,
+      "dev_fit_whitened_held_out": 0.7179253211838653,
+      "published_best": 0.7383233475152673,
+      "published_which": "raw"
+    },
+    "linear": {
+      "raw": 0.7163951507422928,
+      "test_fit_whitened_leakage": 0.6662760762691365,
+      "dev_fit_whitened_held_out": 0.6362974806970144,
+      "published_best": 0.7163951507422928,
+      "published_which": "raw"
+    }
+  },
+  "bangla": {
+    "ours": {
+      "raw": 0.8452311286928136,
+      "test_fit_whitened_leakage": 0.704245073233844,
+      "dev_fit_whitened_held_out": 0.8731797937152742,
+      "published_best": 0.8452311286928136,
+      "published_which": "raw"
+    },
+    "linear": {
+      "raw": 0.864655174248244,
+      "test_fit_whitened_leakage": 0.7002955740499177,
+      "dev_fit_whitened_held_out": 0.8925804316785585,
+      "published_best": 0.864655174248244,
+      "published_which": "raw"
+    }
+  },
+  "telugu": {
+    "ours": {
+      "raw": 0.7767991540693114,
+      "test_fit_whitened_leakage": 0.718139638003498,
+      "dev_fit_whitened_held_out": 0.6875834971410036,
+      "published_best": 0.7767991540693114,
+      "published_which": "raw"
+    },
+    "linear": {
+      "raw": 0.7912023658050895,
+      "test_fit_whitened_leakage": 0.7343283036990789,
+      "dev_fit_whitened_held_out": 0.698846930589245,
+      "published_best": 0.7912023658050895,
+      "published_which": "raw"
+    }
+  },
+  "hindi": {
+    "ours": {
+      "raw": 0.6777469661946467,
+      "test_fit_whitened_leakage": 0.6980004661954695,
+      "dev_fit_whitened_held_out": 0.642043967202726,
+      "published_best": 0.6980004661954695,
+      "published_which": "whitened"
+    },
+    "linear": {
+      "raw": 0.7060653171855318,
+      "test_fit_whitened_leakage": 0.6961624566674974,
+      "dev_fit_whitened_held_out": 0.6348971484358293,
+      "published_best": 0.7060653171855318,
+      "published_which": "raw"
+    }
+  },
+  "arabic": {
+    "ours": {
+      "raw": 0.4149129019845984,
+      "test_fit_whitened_leakage": 0.4217035514919273,
+      "dev_fit_whitened_held_out": 0.3930535755493751,
+      "published_best": 0.4217035514919273,
+      "published_which": "whitened"
+    },
+    "linear": {
+      "raw": 0.4525680393892466,
+      "test_fit_whitened_leakage": 0.4638465810583845,
+      "dev_fit_whitened_held_out": 0.42513762785405923,
+      "published_best": 0.4638465810583845,
+      "published_which": "whitened"
+    }
+  }
+}

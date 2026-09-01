@@ -1,0 +1,46 @@
+Loaded existing results for: ['english', 'bangla', 'telugu', 'hindi']
+
+==================== arabic: caching (once, shared across heads and fractions) ====================
+  varying: nli-data  caching done at 1852.5s
+  arabic ours frac=0.10: score=0.3834 n_train=540  (291.6s)
+  arabic ours frac=0.25: score=0.4251 n_train=1350  (621.7s)
+  arabic ours frac=0.50: score=0.4340 n_train=2700  (1078.8s)
+  arabic ours frac=1.00: score=0.4217 n_train=published  (0.0s)
+  arabic linear frac=0.10: score=0.4579 n_train=540  (5.5s)
+  arabic linear frac=0.25: score=0.4623 n_train=1350  (11.2s)
+  arabic linear frac=0.50: score=0.4664 n_train=2700  (20.8s)
+  arabic linear frac=1.00: score=0.4638 n_train=published  (0.0s)
+  arabic total: 3882.0s
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\data_size_sensitivity_sweep.json
+
+=== Full summary: does the margin shrink or reverse as data grows? ===
+  english (varying task-data):
+    frac=0.10: ours=0.7365 linear=0.7053 margin(ours-linear)=+0.0312
+    frac=0.25: ours=0.7455 linear=0.7200 margin(ours-linear)=+0.0255
+    frac=0.50: ours=0.7346 linear=0.7146 margin(ours-linear)=+0.0200
+    frac=1.00: ours=0.7383 linear=0.7164 margin(ours-linear)=+0.0219
+  bangla (varying task-data):
+    frac=0.10: ours=0.8012 linear=0.8502 margin(ours-linear)=-0.0490
+    frac=0.25: ours=0.8347 linear=0.8682 margin(ours-linear)=-0.0334
+    frac=0.50: ours=0.8295 linear=0.8621 margin(ours-linear)=-0.0326
+    frac=1.00: ours=0.8452 linear=0.8647 margin(ours-linear)=-0.0194
+  telugu (varying task-data):
+    frac=0.10: ours=0.7282 linear=0.7880 margin(ours-linear)=-0.0597
+    frac=0.25: ours=0.7492 linear=0.7772 margin(ours-linear)=-0.0280
+    frac=0.50: ours=0.7586 linear=0.7859 margin(ours-linear)=-0.0274
+    frac=1.00: ours=0.7768 linear=0.7912 margin(ours-linear)=-0.0144
+  hindi (varying nli-data):
+    frac=0.10: ours=0.6991 linear=0.7133 margin(ours-linear)=-0.0142
+    frac=0.25: ours=0.7163 linear=0.7245 margin(ours-linear)=-0.0082
+    frac=0.50: ours=0.7123 linear=0.7079 margin(ours-linear)=+0.0044
+    frac=1.00: ours=0.6980 linear=0.7061 margin(ours-linear)=-0.0081
+  arabic (varying nli-data):
+Traceback (most recent call last):
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\data_size_sensitivity_sweep_arabic_resume.py", line 78, in <module>
+    main()
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\data_size_sensitivity_sweep_arabic_resume.py", line 70, in main
+    o = r["ours"][str(frac)]["score"]
+        ~~~~~~~~~^^^^^^^^^^^
+KeyError: '0.1'
+DONE_ARABIC_RESUME

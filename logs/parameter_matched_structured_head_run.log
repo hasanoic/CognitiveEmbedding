@@ -1,0 +1,33 @@
+ParameterMatchedCore trainable params: 589,280  (target: 590,592, linear head)
+
+Loading bangla backbone and caching data...
+  train/val/test: 2200/500/1394
+  caching done at 510.5s
+
+Training parameter-matched structured head (K=2, gru=52, bottleneck=104)...
+    epoch  0 val_auroc=0.8317 (best=0.8317)
+    epoch  1 val_auroc=0.8443 (best=0.8443)
+    epoch  2 val_auroc=0.8558 (best=0.8558)
+    epoch  3 val_auroc=0.8139 (best=0.8558)
+    epoch  4 val_auroc=0.8279 (best=0.8558)
+    epoch  5 val_auroc=0.8479 (best=0.8558)
+    epoch  6 val_auroc=0.8276 (best=0.8558)
+    epoch  7 val_auroc=0.8213 (best=0.8558)
+    epoch  8 val_auroc=0.8102 (best=0.8558)
+    epoch  9 val_auroc=0.8515 (best=0.8558)
+    epoch 10 val_auroc=0.8186 (best=0.8558)
+    epoch 11 val_auroc=0.7948 (best=0.8558)
+    epoch 12 val_auroc=0.8364 (best=0.8558)
+    epoch 13 val_auroc=0.8148 (best=0.8558)
+    epoch 14 val_auroc=0.8285 (best=0.8558)
+
+=== Result ===
+  parameter-matched structured head: raw=0.8582 whitened=0.8348 best=0.8582
+  full-capacity structured head (published, 4,430,592 params): 0.8452
+  linear head (published, 590,592 params): 0.8647
+  parameter-matched vs linear (both ~590K params): -0.0065
+  parameter-matched vs full-capacity structured: +0.0129
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\parameter_matched_bangla.json
+Total time: 943.1s
+DONE_PARAM_MATCHED

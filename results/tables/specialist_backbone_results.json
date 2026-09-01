@@ -1,0 +1,47 @@
+{
+  "english": {
+    "backbone": "roberta-base",
+    "baseline": 0.6629315469347737,
+    "raw": 0.7383233475152673,
+    "whitened": 0.7359030508585737,
+    "best": 0.7383233475152673,
+    "n_test": 1379,
+    "seconds": 5046.096582889557
+  },
+  "bangla": {
+    "backbone": "csebuetnlp/banglabert",
+    "baseline": 0.6591322592795144,
+    "raw": 0.8452311286928136,
+    "whitened": 0.704245073233844,
+    "best": 0.8452311286928136,
+    "n_test": 1394,
+    "seconds": 2047.0673866271973
+  },
+  "telugu": {
+    "backbone": "l3cube-pune/telugu-bert",
+    "baseline": 0.7213165273433167,
+    "raw": 0.7767991540693114,
+    "whitened": 0.718139638003498,
+    "best": 0.7767991540693114,
+    "n_test": 297,
+    "seconds": 648.6392369270325
+  },
+  "hindi": {
+    "backbone": "l3cube-pune/hindi-bert-v2",
+    "baseline": 0.6907981729062557,
+    "raw": 0.6777469661946467,
+    "whitened": 0.6980004661954695,
+    "best": 0.6980004661954695,
+    "n_test": 968,
+    "seconds": 4574.175171613693
+  },
+  "arabic": {
+    "backbone": "aubmindlab/bert-base-arabertv2",
+    "baseline": 0.4498296683744248,
+    "raw": 0.4149129019845984,
+    "whitened": 0.4217035514919273,
+    "best": 0.4217035514919273,
+    "n_test": 595,
+    "seconds": 4253.800214767456
+  }
+}

@@ -1,0 +1,28 @@
+Loading frozen backbone (xlm-roberta-base)...
+
+=== Memory-Aware Retrieval (content_only, zero-parameter) ===
+  english...
+    english: auroc=0.5520 (n_items=10)
+  bangla...
+    bangla: auroc=0.6512 (n_items=15)
+
+=== Predictive Head (discourse next-sentence prediction) ===
+  english...
+    epoch  0 val_recall@1=0.0500 (best=0.0500)
+    epoch  1 val_recall@1=0.0000 (best=0.0500)
+    english: untrained=0.1000 trained=0.0500 chance=0.0500
+  bangla...
+    epoch  0 val_recall@1=0.0455 (best=0.0455)
+    epoch  1 val_recall@1=0.0455 (best=0.0455)
+    bangla: untrained=0.0455 trained=0.0455 chance=0.0455
+
+=== Summary ===
+Memory-Aware Retrieval (AUROC, 0.5=chance):
+  english: 0.5520
+  bangla: 0.6512
+Predictive Head (Recall@1, trained vs untrained vs chance):
+  english: trained=0.0500 untrained=0.1000 chance=0.0500
+  bangla: trained=0.0455 untrained=0.0455 chance=0.0455
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\memory_predictive_multilingual.json
+Total time: 132.8s

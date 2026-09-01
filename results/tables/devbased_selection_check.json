@@ -1,0 +1,122 @@
+{
+  "english": {
+    "ours": {
+      "dev_raw": 0.8022522746677879,
+      "dev_whitened": 0.7943292765965184,
+      "devbased_choice": "raw",
+      "test_raw": 0.7383233475152673,
+      "test_whitened": 0.7179276256436224,
+      "current_choice": "raw",
+      "devbased_test_score": 0.7383233475152673,
+      "current_test_score": 0.7383233475152673,
+      "selections_match": true
+    },
+    "linear": {
+      "dev_raw": 0.7862879860980115,
+      "dev_whitened": 0.7242265512240944,
+      "devbased_choice": "raw",
+      "test_raw": 0.7163951507422928,
+      "test_whitened": 0.6362974806970144,
+      "current_choice": "raw",
+      "devbased_test_score": 0.7163951507422928,
+      "current_test_score": 0.7163951507422928,
+      "selections_match": true
+    }
+  },
+  "bangla": {
+    "ours": {
+      "dev_raw": 0.8476417594064654,
+      "dev_whitened": 0.74612480127186,
+      "devbased_choice": "raw",
+      "test_raw": 0.8452311286928136,
+      "test_whitened": 0.8731797937152742,
+      "current_choice": "devfit",
+      "devbased_test_score": 0.8452311286928136,
+      "current_test_score": 0.8731797937152742,
+      "selections_match": false
+    },
+    "linear": {
+      "dev_raw": 0.8698165076841546,
+      "dev_whitened": 0.6989765500794913,
+      "devbased_choice": "raw",
+      "test_raw": 0.864655174248244,
+      "test_whitened": 0.8925804316785585,
+      "current_choice": "devfit",
+      "devbased_test_score": 0.864655174248244,
+      "current_test_score": 0.8925804316785585,
+      "selections_match": false
+    }
+  },
+  "telugu": {
+    "ours": {
+      "dev_raw": 0.7596896806304748,
+      "dev_whitened": 0.6425539131221782,
+      "devbased_choice": "raw",
+      "test_raw": 0.7767991540693114,
+      "test_whitened": 0.6875834971410036,
+      "current_choice": "raw",
+      "devbased_test_score": 0.7767991540693114,
+      "current_test_score": 0.7767991540693114,
+      "selections_match": true
+    },
+    "linear": {
+      "dev_raw": 0.7875971057724775,
+      "dev_whitened": 0.6913242767699276,
+      "devbased_choice": "raw",
+      "test_raw": 0.7912023658050895,
+      "test_whitened": 0.698846930589245,
+      "current_choice": "raw",
+      "devbased_test_score": 0.7912023658050895,
+      "current_test_score": 0.7912023658050895,
+      "selections_match": true
+    }
+  },
+  "hindi": {
+    "ours": {
+      "dev_raw": 0.717548918875797,
+      "dev_whitened": 0.6979602581921024,
+      "devbased_choice": "raw",
+      "test_raw": 0.6777469661946467,
+      "test_whitened": 0.642043967202726,
+      "current_choice": "raw",
+      "devbased_test_score": 0.6777469661946467,
+      "current_test_score": 0.6777469661946467,
+      "selections_match": true
+    },
+    "linear": {
+      "dev_raw": 0.7244930233384113,
+      "dev_whitened": 0.6317790911086513,
+      "devbased_choice": "raw",
+      "test_raw": 0.7060653171855318,
+      "test_whitened": 0.6348971484358293,
+      "current_choice": "raw",
+      "devbased_test_score": 0.7060653171855318,
+      "current_test_score": 0.7060653171855318,
+      "selections_match": true
+    }
+  },
+  "arabic": {
+    "ours": {
+      "dev_raw": 0.5961663959006286,
+      "dev_whitened": 0.4620748157765179,
+      "devbased_choice": "raw",
+      "test_raw": 0.4149129019845984,
+      "test_whitened": 0.3930535755493751,
+      "current_choice": "raw",
+      "devbased_test_score": 0.4149129019845984,
+      "current_test_score": 0.4149129019845984,
+      "selections_match": true
+    },
+    "linear": {
+      "dev_raw": 0.54352031724725,
+      "dev_whitened": 0.5090343841920751,
+      "devbased_choice": "raw",
+      "test_raw": 0.4525680393892466,
+      "test_whitened": 0.42513762785405923,
+      "current_choice": "raw",
+      "devbased_test_score": 0.4525680393892466,
+      "current_test_score": 0.4525680393892466,
+      "selections_match": true
+    }
+  }
+}

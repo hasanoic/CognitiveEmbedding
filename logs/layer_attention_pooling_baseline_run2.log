@@ -1,0 +1,81 @@
+English already completed (pre-OOM-fix run) -- reusing that result, not retraining.
+
+==================== bangla ====================
+  caching done at 516.4s
+  LayerAttentionPoolingHead trainable params: 3,540,480
+    [task] epoch 0 val_score=0.7897 (best=0.7897)
+    [task] epoch 1 val_score=0.7940 (best=0.7940)
+    [task] epoch 2 val_score=0.7917 (best=0.7940)
+    [task] epoch 3 val_score=0.7684 (best=0.7940)
+    [task] epoch 4 val_score=0.7637 (best=0.7940)
+    [task] epoch 5 val_score=0.7590 (best=0.7940)
+    [task] epoch 6 val_score=0.7839 (best=0.7940)
+    [task] epoch 7 val_score=0.7590 (best=0.7940)
+    [task] epoch 8 val_score=0.7657 (best=0.7940)
+    [task] epoch 9 val_score=0.7859 (best=0.7940)
+    [task] epoch 10 val_score=0.7537 (best=0.7940)
+    [task] epoch 11 val_score=0.7752 (best=0.7940)
+    [task] epoch 12 val_score=0.7697 (best=0.7940)
+    [task] epoch 13 val_score=0.7502 (best=0.7940)
+    [task] epoch 14 val_score=0.7791 (best=0.7940)
+  bangla: layer-attn raw=0.8300 whitened=0.6963 best=0.8300  n_params=3,540,480  (1116.9s)
+  published: untrained=0.6591 linear=0.8647 structured=0.8452
+
+==================== telugu ====================
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/telugu-bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  caching done at 195.8s
+  LayerAttentionPoolingHead trainable params: 3,540,480
+    [task] epoch 0 val_score=0.5978 (best=0.5978)
+    [task] epoch 1 val_score=0.6558 (best=0.6558)
+    [task] epoch 2 val_score=0.6719 (best=0.6719)
+    [task] epoch 3 val_score=0.6827 (best=0.6827)
+    [task] epoch 4 val_score=0.6986 (best=0.6986)
+    [task] epoch 5 val_score=0.6667 (best=0.6986)
+    [task] epoch 6 val_score=0.7301 (best=0.7301)
+    [task] epoch 7 val_score=0.7227 (best=0.7301)
+    [task] epoch 8 val_score=0.7282 (best=0.7301)
+    [task] epoch 9 val_score=0.7325 (best=0.7325)
+    [task] epoch 10 val_score=0.7526 (best=0.7526)
+    [task] epoch 11 val_score=0.7440 (best=0.7526)
+    [task] epoch 12 val_score=0.7329 (best=0.7526)
+    [task] epoch 13 val_score=0.7464 (best=0.7526)
+    [task] epoch 14 val_score=0.7349 (best=0.7526)
+  telugu: layer-attn raw=0.7528 whitened=0.7649 best=0.7649  n_params=3,540,480  (361.7s)
+  published: untrained=0.7213 linear=0.7912 structured=0.7768
+
+==================== hindi ====================
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/hindi-bert-v2 and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  caching done at 1921.9s
+  LayerAttentionPoolingHead trainable params: 3,540,480
+    [nli] epoch 0 val_loss=4.4005 (best=4.4005)
+    [nli] epoch 1 val_loss=4.1506 (best=4.1506)
+    [nli] epoch 2 val_loss=3.8637 (best=3.8637)
+    [nli] epoch 3 val_loss=3.8270 (best=3.8270)
+    [nli] epoch 4 val_loss=3.8585 (best=3.8270)
+    [nli] epoch 5 val_loss=3.7465 (best=3.7465)
+  hindi: layer-attn raw=0.6398 whitened=0.6472 best=0.6472  n_params=3,540,480  (2615.9s)
+  published: untrained=0.6908 linear=0.7061 structured=0.6980
+
+==================== arabic ====================
+  caching done at 1533.5s
+  LayerAttentionPoolingHead trainable params: 3,540,480
+    [nli] epoch 0 val_loss=4.0901 (best=4.0901)
+    [nli] epoch 1 val_loss=3.8763 (best=3.8763)
+    [nli] epoch 2 val_loss=3.8215 (best=3.8215)
+    [nli] epoch 3 val_loss=3.6205 (best=3.6205)
+    [nli] epoch 4 val_loss=3.7559 (best=3.6205)
+    [nli] epoch 5 val_loss=3.5618 (best=3.5618)
+  arabic: layer-attn raw=0.3700 whitened=0.3553 best=0.3700  n_params=3,540,480  (2191.9s)
+  published: untrained=0.4498 linear=0.4638 structured=0.4217
+
+=== Summary: how does layer-wise attention pooling compare? ===
+  english: structured=0.7383  linear=0.7164  layer-attn=0.7152  untrained=0.6629
+  bangla: linear=0.8647  structured=0.8452  layer-attn=0.8300  untrained=0.6591
+  telugu: linear=0.7912  structured=0.7768  layer-attn=0.7649  untrained=0.7213
+  hindi: linear=0.7061  structured=0.6980  untrained=0.6908  layer-attn=0.6472
+  arabic: linear=0.4638  untrained=0.4498  structured=0.4217  layer-attn=0.3700
+
+Total time: 6286.5s
+DONE_LAYER_ATTENTION_2

@@ -1,0 +1,55 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+=============== english (roberta-base) ===============
+  Memory-Aware Retrieval (english)...
+    auroc=0.7798 (n_items=257)
+  Predictive Head (english)...
+    epoch  0 val_recall@1=0.0108 (best=0.0108)
+    epoch  1 val_recall@1=0.0194 (best=0.0194)
+    epoch  2 val_recall@1=0.0065 (best=0.0194)
+    epoch  3 val_recall@1=0.0215 (best=0.0215)
+    epoch  4 val_recall@1=0.0108 (best=0.0215)
+    epoch  5 val_recall@1=0.0215 (best=0.0215)
+    epoch  6 val_recall@1=0.0108 (best=0.0215)
+    epoch  7 val_recall@1=0.0215 (best=0.0215)
+    epoch  8 val_recall@1=0.0172 (best=0.0215)
+    epoch  9 val_recall@1=0.0129 (best=0.0215)
+    epoch 10 val_recall@1=0.0129 (best=0.0215)
+    epoch 11 val_recall@1=0.0065 (best=0.0215)
+    epoch 12 val_recall@1=0.0108 (best=0.0215)
+    epoch 13 val_recall@1=0.0151 (best=0.0215)
+    epoch 14 val_recall@1=0.0108 (best=0.0215)
+    candidates=465  R@1: trained=0.0215 untrained=0.0043 chance=0.0022  R@3: trained=0.1226 chance=0.0065  R@5: trained=0.2022 chance=0.0108
+
+=============== bangla (csebuetnlp/banglabert) ===============
+  Memory-Aware Retrieval (bangla)...
+    auroc=0.7167 (n_items=477)
+  Predictive Head (bangla)...
+    epoch  0 val_recall@1=0.0164 (best=0.0164)
+    epoch  1 val_recall@1=0.0143 (best=0.0164)
+    epoch  2 val_recall@1=0.0123 (best=0.0164)
+    epoch  3 val_recall@1=0.0061 (best=0.0164)
+    epoch  4 val_recall@1=0.0061 (best=0.0164)
+    epoch  5 val_recall@1=0.0102 (best=0.0164)
+    epoch  6 val_recall@1=0.0164 (best=0.0164)
+    epoch  7 val_recall@1=0.0102 (best=0.0164)
+    epoch  8 val_recall@1=0.0061 (best=0.0164)
+    epoch  9 val_recall@1=0.0082 (best=0.0164)
+    epoch 10 val_recall@1=0.0102 (best=0.0164)
+    epoch 11 val_recall@1=0.0164 (best=0.0164)
+    epoch 12 val_recall@1=0.0102 (best=0.0164)
+    epoch 13 val_recall@1=0.0123 (best=0.0164)
+    epoch 14 val_recall@1=0.0102 (best=0.0164)
+    candidates=489  R@1: trained=0.0164 untrained=0.0020 chance=0.0020  R@3: trained=0.0593 chance=0.0061  R@5: trained=0.1104 chance=0.0102
+
+=== Summary (specialist monolingual backbones) ===
+Memory-Aware Retrieval (AUROC, 0.5=chance):
+  english (roberta-base): 0.7798
+  bangla (csebuetnlp/banglabert): 0.7167
+Predictive Head (Recall@k, candidate set size = full val split, disclosed per language):
+  english (roberta-base), candidates=465: R@1 trained=0.0215 chance=0.0022  R@3 trained=0.1226 chance=0.0065  R@5 trained=0.2022 chance=0.0108
+  bangla (csebuetnlp/banglabert), candidates=489: R@1 trained=0.0164 chance=0.0020  R@3 trained=0.0593 chance=0.0061  R@5 trained=0.1104 chance=0.0102
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\memory_predictive_specialist.json
+Total time: 3053.8s

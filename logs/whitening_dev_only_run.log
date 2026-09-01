@@ -1,0 +1,41 @@
+
+==================== english ====================
+  dev n=500  test n=1379
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  ours: raw=0.7383  test-fit-whitened(leakage)=0.7359  dev-fit-whitened(held-out)=0.7179  (published best=0.7383 [raw])
+  linear: raw=0.7164  test-fit-whitened(leakage)=0.6663  dev-fit-whitened(held-out)=0.6363  (published best=0.7164 [raw])
+
+==================== bangla ====================
+  dev n=500  test n=1394
+  ours: raw=0.8452  test-fit-whitened(leakage)=0.7042  dev-fit-whitened(held-out)=0.8732  (published best=0.8452 [raw])
+  linear: raw=0.8647  test-fit-whitened(leakage)=0.7003  dev-fit-whitened(held-out)=0.8926  (published best=0.8647 [raw])
+
+==================== telugu ====================
+  dev n=130  test n=297
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/telugu-bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  ours: raw=0.7768  test-fit-whitened(leakage)=0.7181  dev-fit-whitened(held-out)=0.6876  (published best=0.7768 [raw])
+  linear: raw=0.7912  test-fit-whitened(leakage)=0.7343  dev-fit-whitened(held-out)=0.6988  (published best=0.7912 [raw])
+
+==================== hindi ====================
+  dev n=288  test n=968
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/hindi-bert-v2 and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  ours: raw=0.6777  test-fit-whitened(leakage)=0.6980  dev-fit-whitened(held-out)=0.6420  (published best=0.6980 [whitened])
+  linear: raw=0.7061  test-fit-whitened(leakage)=0.6962  dev-fit-whitened(held-out)=0.6349  (published best=0.7061 [raw])
+
+==================== arabic ====================
+  dev n=32  test n=595
+  ours: raw=0.4149  test-fit-whitened(leakage)=0.4217  dev-fit-whitened(held-out)=0.3931  (published best=0.4217 [whitened])
+  linear: raw=0.4526  test-fit-whitened(leakage)=0.4638  dev-fit-whitened(held-out)=0.4251  (published best=0.4638 [whitened])
+
+=== Summary: does held-out (dev-fit) whitening change which head wins? ===
+  english: ours(dev-fit best)=0.7383  linear(dev-fit best)=0.7164  winner=ours  (published winner=ours)
+  bangla: ours(dev-fit best)=0.8732  linear(dev-fit best)=0.8926  winner=linear  (published winner=linear)
+  telugu: ours(dev-fit best)=0.7768  linear(dev-fit best)=0.7912  winner=linear  (published winner=linear)
+  hindi: ours(dev-fit best)=0.6777  linear(dev-fit best)=0.7061  winner=linear  (published winner=linear)
+  arabic: ours(dev-fit best)=0.4149  linear(dev-fit best)=0.4526  winner=linear  (published winner=linear)
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\whitening_dev_only_results.json
+DONE_WHITENING_DEV_ONLY

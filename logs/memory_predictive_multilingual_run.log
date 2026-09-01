@@ -1,0 +1,54 @@
+Loading frozen backbone (xlm-roberta-base)...
+
+=== Memory-Aware Retrieval (content_only, zero-parameter) ===
+  english...
+    english: auroc=0.6836 (n_items=257)
+  bangla...
+    bangla: auroc=0.6494 (n_items=477)
+
+=== Predictive Head (discourse next-sentence prediction) ===
+  english...
+    epoch  0 val_recall@1=0.0043 (best=0.0043)
+    epoch  1 val_recall@1=0.0129 (best=0.0129)
+    epoch  2 val_recall@1=0.0108 (best=0.0129)
+    epoch  3 val_recall@1=0.0108 (best=0.0129)
+    epoch  4 val_recall@1=0.0129 (best=0.0129)
+    epoch  5 val_recall@1=0.0172 (best=0.0172)
+    epoch  6 val_recall@1=0.0129 (best=0.0172)
+    epoch  7 val_recall@1=0.0129 (best=0.0172)
+    epoch  8 val_recall@1=0.0129 (best=0.0172)
+    epoch  9 val_recall@1=0.0108 (best=0.0172)
+    epoch 10 val_recall@1=0.0151 (best=0.0172)
+    epoch 11 val_recall@1=0.0129 (best=0.0172)
+    epoch 12 val_recall@1=0.0172 (best=0.0172)
+    epoch 13 val_recall@1=0.0194 (best=0.0194)
+    epoch 14 val_recall@1=0.0129 (best=0.0194)
+    english: untrained=0.0215 trained=0.0194 chance=0.0022
+  bangla...
+    epoch  0 val_recall@1=0.0020 (best=0.0020)
+    epoch  1 val_recall@1=0.0020 (best=0.0020)
+    epoch  2 val_recall@1=0.0061 (best=0.0061)
+    epoch  3 val_recall@1=0.0041 (best=0.0061)
+    epoch  4 val_recall@1=0.0041 (best=0.0061)
+    epoch  5 val_recall@1=0.0102 (best=0.0102)
+    epoch  6 val_recall@1=0.0041 (best=0.0102)
+    epoch  7 val_recall@1=0.0041 (best=0.0102)
+    epoch  8 val_recall@1=0.0082 (best=0.0102)
+    epoch  9 val_recall@1=0.0041 (best=0.0102)
+    epoch 10 val_recall@1=0.0061 (best=0.0102)
+    epoch 11 val_recall@1=0.0041 (best=0.0102)
+    epoch 12 val_recall@1=0.0123 (best=0.0123)
+    epoch 13 val_recall@1=0.0082 (best=0.0123)
+    epoch 14 val_recall@1=0.0143 (best=0.0143)
+    bangla: untrained=0.0000 trained=0.0143 chance=0.0020
+
+=== Summary ===
+Memory-Aware Retrieval (AUROC, 0.5=chance):
+  english: 0.6836
+  bangla: 0.6494
+Predictive Head (Recall@1, trained vs untrained vs chance):
+  english: trained=0.0194 untrained=0.0215 chance=0.0022
+  bangla: trained=0.0143 untrained=0.0000 chance=0.0020
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\memory_predictive_multilingual.json
+Total time: 2236.9s

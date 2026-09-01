@@ -1,0 +1,35 @@
+Loading frozen backbone + Matryoshka-trained core...
+Loaded E:\CognitiveEmbedding\cognitive-embedding\results\core_model_matryoshka.pt
+Loading LaBSE (for naive-truncation contrast)...
+
+=== english (n=1379) ===
+  dim= 768  ours(best)=0.7117   labse_naive_trunc(best)=0.7409
+  dim= 256  ours(best)=0.7211   labse_naive_trunc(best)=0.7542
+  dim= 128  ours(best)=0.7261   labse_naive_trunc(best)=0.7596
+  dim=  64  ours(best)=0.7265   labse_naive_trunc(best)=0.7332
+
+=== bangla (n=1394) ===
+  dim= 768  ours(best)=0.8513   labse_naive_trunc(best)=0.8820
+  dim= 256  ours(best)=0.8516   labse_naive_trunc(best)=0.8867
+  dim= 128  ours(best)=0.8513   labse_naive_trunc(best)=0.8738
+  dim=  64  ours(best)=0.8511   labse_naive_trunc(best)=0.8744
+
+=== telugu (n=297) ===
+  dim= 768  ours(best)=0.7785   labse_naive_trunc(best)=0.7824
+  dim= 256  ours(best)=0.7790   labse_naive_trunc(best)=0.7933
+  dim= 128  ours(best)=0.7786   labse_naive_trunc(best)=0.7766
+  dim=  64  ours(best)=0.7795   labse_naive_trunc(best)=0.7542
+
+=== hindi (n=968) ===
+  dim= 768  ours(best)=0.6570   labse_naive_trunc(best)=0.7352
+  dim= 256  ours(best)=0.6650   labse_naive_trunc(best)=0.7033
+  dim= 128  ours(best)=0.6757   labse_naive_trunc(best)=0.7052
+  dim=  64  ours(best)=0.6763   labse_naive_trunc(best)=0.6806
+
+=== arabic (n=595) ===
+  dim= 768  ours(best)=0.4716   labse_naive_trunc(best)=0.5732
+  dim= 256  ours(best)=0.4974   labse_naive_trunc(best)=0.6233
+  dim= 128  ours(best)=0.4851   labse_naive_trunc(best)=0.6015
+  dim=  64  ours(best)=0.5063   labse_naive_trunc(best)=0.5197
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\matryoshka_results.json

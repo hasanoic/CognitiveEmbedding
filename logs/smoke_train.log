@@ -1,0 +1,31 @@
+Loading frozen backbone (xlm-roberta-base)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 2988.17it/s]
+[transformers] [1mXLMRobertaModel LOAD REPORT[0m from: xlm-roberta-base
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+=== Stage 1: training CognitiveEmbeddingCore (Attention + Composition) ===
+[core] Train pairs after gold>=3.0 filter: 13/30, Val: 10
+[core] Caching token features (frozen backbone forward pass, done once)...
+[core] epoch  0 loss=0.4905 val_spearman=-0.0427 (best=-0.0427)
+[core] epoch  1 loss=0.0716 val_spearman=0.0427 (best=0.0427)
+
+=== Stage 2: training PredictiveHead ===
+[predictive] Train pairs: 171, Val pairs: 31
+[predictive] Caching token features...
+[predictive] epoch  0 loss=1.4056 val_recall@1=0.0323 (best=0.0323)
+[predictive] epoch  1 loss=1.3919 val_recall@1=0.0323 (best=0.0323)
+
+Total training time: 79.7s
+Core best val Spearman: 0.0427
+Predictive head best val Recall@1: 0.0323
+Checkpoints saved to E:\CognitiveEmbedding\cognitive-embedding\results

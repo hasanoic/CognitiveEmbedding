@@ -1,0 +1,10 @@
+Loading frozen backbone + trained core checkpoint...
+Loaded trained core from E:\CognitiveEmbedding\cognitive-embedding\results\core_model.pt
+
+=== BnPC (real gold Bangla paraphrase, n=1394) ===
+  ours raw_auroc=0.8240 whitened_auroc=0.7057
+
+=== LaBSE on BnPC (same gold test set) ===
+  labse raw_auroc=0.8820
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\bnpc_results.json

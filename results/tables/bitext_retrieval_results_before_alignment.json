@@ -1,0 +1,66 @@
+{
+  "bangla_en_to_x": {
+    "ours_recall@1": 0.316,
+    "ours_recall@5": 0.556,
+    "ours_recall@10": 0.684,
+    "labse_recall@1": 1.0,
+    "labse_recall@5": 1.0,
+    "labse_recall@10": 1.0
+  },
+  "bangla_x_to_en": {
+    "ours_recall@1": 0.258,
+    "ours_recall@5": 0.46,
+    "ours_recall@10": 0.582,
+    "labse_recall@1": 0.998,
+    "labse_recall@5": 1.0,
+    "labse_recall@10": 1.0
+  },
+  "telugu_en_to_x": {
+    "ours_recall@1": 0.326,
+    "ours_recall@5": 0.608,
+    "ours_recall@10": 0.708,
+    "labse_recall@1": 1.0,
+    "labse_recall@5": 1.0,
+    "labse_recall@10": 1.0
+  },
+  "telugu_x_to_en": {
+    "ours_recall@1": 0.282,
+    "ours_recall@5": 0.59,
+    "ours_recall@10": 0.686,
+    "labse_recall@1": 1.0,
+    "labse_recall@5": 1.0,
+    "labse_recall@10": 1.0
+  },
+  "hindi_en_to_x": {
+    "ours_recall@1": 0.464,
+    "ours_recall@5": 0.74,
+    "ours_recall@10": 0.832,
+    "labse_recall@1": 1.0,
+    "labse_recall@5": 1.0,
+    "labse_recall@10": 1.0
+  },
+  "hindi_x_to_en": {
+    "ours_recall@1": 0.388,
+    "ours_recall@5": 0.694,
+    "ours_recall@10": 0.8,
+    "labse_recall@1": 1.0,
+    "labse_recall@5": 1.0,
+    "labse_recall@10": 1.0
+  },
+  "arabic_en_to_x": {
+    "ours_recall@1": 0.432,
+    "ours_recall@5": 0.726,
+    "ours_recall@10": 0.816,
+    "labse_recall@1": 1.0,
+    "labse_recall@5": 1.0,
+    "labse_recall@10": 1.0
+  },
+  "arabic_x_to_en": {
+    "ours_recall@1": 0.326,
+    "ours_recall@5": 0.612,
+    "ours_recall@10": 0.724,
+    "labse_recall@1": 0.998,
+    "labse_recall@5": 1.0,
+    "labse_recall@10": 1.0
+  }
+}

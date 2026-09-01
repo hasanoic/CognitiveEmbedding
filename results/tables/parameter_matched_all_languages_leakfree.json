@@ -1,0 +1,41 @@
+{
+  "telugu": {
+    "protocol": "leak-free (whitening fit on dev split, never test)",
+    "n_params_matched": 589280,
+    "n_params_linear": 590592,
+    "n_params_full_structured": 4430592,
+    "parameter_matched": {
+      "raw": 0.7758102132501598,
+      "whitened": 0.6847646607315379,
+      "best": 0.7758102132501598
+    },
+    "full_capacity_structured_published": 0.7767991540693114,
+    "linear_published": 0.7912023658050895
+  },
+  "hindi": {
+    "protocol": "leak-free (whitening fit on dev split, never test)",
+    "n_params_matched": 589280,
+    "n_params_linear": 590592,
+    "n_params_full_structured": 4430592,
+    "parameter_matched": {
+      "raw": 0.731346945851719,
+      "whitened": 0.6858628061105881,
+      "best": 0.731346945851719
+    },
+    "full_capacity_structured_published": 0.6777469661946467,
+    "linear_published": 0.7060653171855318
+  },
+  "arabic": {
+    "protocol": "leak-free (whitening fit on dev split, never test)",
+    "n_params_matched": 589280,
+    "n_params_linear": 590592,
+    "n_params_full_structured": 4430592,
+    "parameter_matched": {
+      "raw": 0.4573026881167382,
+      "whitened": 0.3906973067915744,
+      "best": 0.4573026881167382
+    },
+    "full_capacity_structured_published": 0.4149129019845984,
+    "linear_published": 0.4525680393892466
+  }
+}

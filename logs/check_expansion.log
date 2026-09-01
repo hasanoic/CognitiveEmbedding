@@ -1,0 +1,7 @@
+sts12: 3108 {'s1': 'the problem likely will mean corrective changes before the shuttle fleet starts flying again .', 's2': 'he said the problem needs to be corrected before the space shuttle fleet is cleared to fly again .', 'score': 4.4}
+hindi: 968 Traceback (most recent call last):
+  File "<string>", line 9, in <module>
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 9-12: character maps to <undefined>

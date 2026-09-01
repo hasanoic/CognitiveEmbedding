@@ -1,0 +1,6 @@
+Loading trained core checkpoint...
+english: raw=0.6751 whitened=0.7161 (n=1379)
+bangla: raw=0.8337 whitened=0.6900 (n=1394)
+telugu: raw=0.6994 whitened=0.6958 (n=297)
+hindi: raw=0.6568 whitened=0.6782 (n=968)
+arabic: raw=0.3285 whitened=0.4956 (n=595)

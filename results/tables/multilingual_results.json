@@ -1,0 +1,60 @@
+{
+  "per_language": {
+    "english": {
+      "family": "Germanic",
+      "tier": "trained",
+      "metric": "spearman",
+      "n_pairs": 1379,
+      "untrained_baseline": 0.6558682472084978,
+      "ours": 0.7161074277171138,
+      "relative_improvement": 0.060239180508615986,
+      "labse": 0.7154402110238245
+    },
+    "bangla": {
+      "family": "Indo-Aryan",
+      "tier": "trained",
+      "metric": "auroc",
+      "n_pairs": 1394,
+      "untrained_baseline": 0.6583704485533044,
+      "ours": 0.6900068733202392,
+      "relative_improvement": 0.031636424766934845,
+      "labse": 0.8820448872498845
+    },
+    "telugu": {
+      "family": "Dravidian",
+      "tier": "trained",
+      "metric": "spearman",
+      "n_pairs": 297,
+      "untrained_baseline": 0.7049778138746192,
+      "ours": 0.6957518230127889,
+      "relative_improvement": -0.009225990861830291,
+      "labse": 0.7824191876843805
+    },
+    "hindi": {
+      "family": "Indo-Aryan",
+      "tier": "zero-shot",
+      "metric": "spearman",
+      "n_pairs": 968,
+      "untrained_baseline": 0.6529153526755088,
+      "ours": 0.6782156117835381,
+      "relative_improvement": 0.025300259108029244,
+      "labse": 0.7352030040461026
+    },
+    "arabic": {
+      "family": "Semitic",
+      "tier": "zero-shot",
+      "metric": "spearman",
+      "n_pairs": 595,
+      "untrained_baseline": 0.4557370091593334,
+      "ours": 0.49562432469319706,
+      "relative_improvement": 0.039887315533863654,
+      "labse": 0.508661733485482
+    }
+  },
+  "trained_tier_mean_delta": 0.02754987147124018,
+  "trained_tier_std_delta": 0.028505875964559564,
+  "zeroshot_tier_mean_delta": 0.03259378732094645,
+  "zeroshot_tier_std_delta": 0.007293528212917205,
+  "all_mean_delta": 0.02956743781112269,
+  "all_std_delta": 0.022692180616346695
+}

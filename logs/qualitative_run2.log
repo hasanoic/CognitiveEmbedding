@@ -1,0 +1,21 @@
+Loading frozen backbone + checkpoints...
+Loading LaBSE...
+
+=== Finding STS success/failure cases (STS-B test) ===
+  success case found: baseline_err=0.975 ours_err=0.012
+  failure case found: ours_err=0.341 labse_err=0.000
+
+=== Bitext retrieval before/after example ===
+  before: true rank=3/80, top1_correct=False
+  after:  true rank=1/80, top1_correct=True
+
+=== Memory-Aware Retrieval example ===
+  true context scores: ['0.988', '0.985', '0.985', '0.983', '0.979']
+  distractor score: 0.982
+
+=== Bangla paraphrase example (BnPC) ===
+  true paraphrase sim=0.994
+  correctly rejected sim=0.062
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\qualitative_examples.json
+Total time: 266.9s

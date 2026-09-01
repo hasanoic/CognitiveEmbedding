@@ -1,0 +1,35 @@
+Loading frozen backbone + Matryoshka-trained linear head...
+Loaded E:\CognitiveEmbedding\cognitive-embedding\results\core_model_matryoshka_linear.pt
+
+=== english (n=1379) ===
+  dim= 768  linear(best)=0.6594
+  dim= 256  linear(best)=0.6781
+  dim= 128  linear(best)=0.6809
+  dim=  64  linear(best)=0.6742
+
+=== bangla (n=1394) ===
+  dim= 768  linear(best)=0.8456
+  dim= 256  linear(best)=0.8426
+  dim= 128  linear(best)=0.8379
+  dim=  64  linear(best)=0.8282
+
+=== telugu (n=297) ===
+  dim= 768  linear(best)=0.7330
+  dim= 256  linear(best)=0.7581
+  dim= 128  linear(best)=0.7538
+  dim=  64  linear(best)=0.7427
+
+=== hindi (n=968) ===
+  dim= 768  linear(best)=0.6598
+  dim= 256  linear(best)=0.6409
+  dim= 128  linear(best)=0.6466
+  dim=  64  linear(best)=0.6366
+
+=== arabic (n=595) ===
+  dim= 768  linear(best)=0.4824
+  dim= 256  linear(best)=0.5254
+  dim= 128  linear(best)=0.4819
+  dim=  64  linear(best)=0.4391
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\matryoshka_results_linear.json
+DONE_ALL

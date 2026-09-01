@@ -1,0 +1,24 @@
+Loading RoBERTa-base specialist backbone...
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Loading trained English checkpoints (inference only)...
+
+==================== sickr-sts ====================
+  n = 9927
+  ours:   raw=0.7079 whitened=0.6237 best=0.7079
+  linear: raw=0.7195 whitened=0.6192 best=0.7195
+  winner: linear  (margin ours-linear = -0.0117)
+
+=== Summary: does the structured head's STS-B win generalize? ===
+  STS-B (published): ours=0.7383 linear=0.7164 margin=+0.0219  winner=ours
+  sts12-sts: ours=0.6246 linear=0.5921 margin=+0.0325  winner=ours
+  sts13-sts: ours=0.7845 linear=0.7547 margin=+0.0298  winner=ours
+  sts14-sts: ours=0.6872 linear=0.6412 margin=+0.0460  winner=ours
+  sts15-sts: ours=0.7417 linear=0.7865 margin=-0.0448  winner=linear
+  sts16-sts: ours=0.7535 linear=0.7180 margin=+0.0355  winner=ours
+  sickr-sts: ours=0.7079 linear=0.7195 margin=-0.0117  winner=linear
+
+  structured head wins 5 of 7 English similarity benchmarks (including STS-B)
+
+Results written to E:\CognitiveEmbedding\cognitive-embedding\results\tables\english_cross_benchmark_sts.json
+DONE_SICKR_RESUME

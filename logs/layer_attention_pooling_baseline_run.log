@@ -1,0 +1,111 @@
+
+==================== english ====================
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  caching done at 1937.7s
+  LayerAttentionPoolingHead trainable params: 3,540,480
+    [nli] epoch 0 val_loss=2.9205 (best=2.9205)
+    [nli] epoch 1 val_loss=2.6213 (best=2.6213)
+    [nli] epoch 2 val_loss=2.6584 (best=2.6213)
+    [nli] epoch 3 val_loss=2.5716 (best=2.5716)
+    [nli] epoch 4 val_loss=2.6658 (best=2.5716)
+    [nli] epoch 5 val_loss=2.6030 (best=2.5716)
+    [task] epoch 0 val_score=0.7698 (best=0.7698)
+    [task] epoch 1 val_score=0.7859 (best=0.7859)
+    [task] epoch 2 val_score=0.7726 (best=0.7859)
+    [task] epoch 3 val_score=0.7769 (best=0.7859)
+    [task] epoch 4 val_score=0.7776 (best=0.7859)
+    [task] epoch 5 val_score=0.7854 (best=0.7859)
+    [task] epoch 6 val_score=0.7963 (best=0.7963)
+    [task] epoch 7 val_score=0.7818 (best=0.7963)
+    [task] epoch 8 val_score=0.7754 (best=0.7963)
+    [task] epoch 9 val_score=0.7893 (best=0.7963)
+    [task] epoch 10 val_score=0.7923 (best=0.7963)
+    [task] epoch 11 val_score=0.7806 (best=0.7963)
+    [task] epoch 12 val_score=0.7865 (best=0.7963)
+    [task] epoch 13 val_score=0.7894 (best=0.7963)
+    [task] epoch 14 val_score=0.7914 (best=0.7963)
+  english: layer-attn raw=0.6859 whitened=0.7152 best=0.7152  n_params=3,540,480  (3812.6s)
+  published: untrained=0.6629 linear=0.7164 structured=0.7383
+
+==================== bangla ====================
+Traceback (most recent call last):
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\layer_attention_pooling_baseline.py", line 345, in <module>
+    main()
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\layer_attention_pooling_baseline.py", line 303, in main
+    cached = setup_fn(backbone, rng)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\layer_attention_pooling_baseline.py", line 257, in run_bangla
+    v1, v2 = cache_pairs(backbone, val_pairs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\layer_attention_pooling_baseline.py", line 163, in cache_pairs
+    return [backbone.encode_layers(p["s1"]) for p in pairs], [backbone.encode_layers(p["s2"]) for p in pairs]
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\layer_attention_pooling_baseline.py", line 163, in <listcomp>
+    return [backbone.encode_layers(p["s1"]) for p in pairs], [backbone.encode_layers(p["s2"]) for p in pairs]
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CognitiveEmbedding\cognitive-embedding\scripts\layer_attention_pooling_baseline.py", line 106, in encode_layers
+    out = self.model(**enc, output_hidden_states=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\nn\modules\module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\nn\modules\module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\transformers\models\electra\modeling_electra.py", line 789, in forward
+    hidden_states = self.encoder(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\nn\modules\module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\nn\modules\module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\transformers\models\electra\modeling_electra.py", line 559, in forward
+    layer_outputs = layer_module(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\transformers\modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\nn\modules\module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\nn\modules\module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\transformers\utils\deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\transformers\models\electra\modeling_electra.py", line 466, in forward
+    self_attention_outputs = self.attention(
+                             ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\nn\modules\module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\nn\modules\module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\transformers\utils\deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\transformers\models\electra\modeling_electra.py", line 393, in forward
+    self_outputs = self.self(
+                   ^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\nn\modules\module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\nn\modules\module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\transformers\utils\deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\transformers\models\electra\modeling_electra.py", line 283, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 9408 bytes.
+DONE_LAYER_ATTENTION

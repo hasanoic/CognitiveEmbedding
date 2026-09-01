@@ -1,0 +1,35 @@
+
+==================== english ====================
+  dev n=500  test n=1379
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  ours [raw]: reproduced=0.7383 (published=0.7383)
+    95% CI: [+0.7114, +0.7631]
+  linear [raw]: reproduced=0.7164 (published=0.7164)
+    95% CI: [+0.6870, +0.7436]
+  margin (ours-linear) 95% CI: [+0.0013, +0.0432]  SIGNIFICANT
+
+==================== bangla ====================
+  dev n=500  test n=1394
+  ours [devfit]: reproduced=0.8732 (published=0.8732)
+    95% CI: [+0.8538, +0.8909]
+  linear [devfit]: reproduced=0.8926 (published=0.8926)
+    95% CI: [+0.8752, +0.9091]
+  margin (ours-linear) 95% CI: [-0.0329, -0.0064]  SIGNIFICANT
+
+==================== telugu ====================
+  dev n=130  test n=297
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/telugu-bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  ours [raw]: reproduced=0.7768 (published=0.7768)
+    95% CI: [+0.7220, +0.8205]
+  linear [raw]: reproduced=0.7912 (published=0.7912)
+    95% CI: [+0.7362, +0.8342]
+  margin (ours-linear) 95% CI: [-0.0450, +0.0166]  not significant
+
+==================== hindi ====================
+  dev n=288  test n=968
+Some weights of BertModel were not initialized from the model checkpoint at l3cube-pune/hindi-bert-v2 and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  ours [raw]: reproduced=0.6777 (published=0.6777)
+    95% CI: [+0.6393, +0.7134]
