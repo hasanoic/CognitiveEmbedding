@@ -97,6 +97,8 @@ Sentence embeddings power semantic search, retrieval-augmented generation, parap
 
 In this paper, ``cognitively-motivated'' does not claim that the resulting embedding reproduces human cognition. We use the term for a sentence embedding whose pooling architecture is motivated by computational analogues of selective attention and compositional integration, not for a representation validated against human behavioral data (Cognitive validity, Section~\ref{sec:results:limitations}). The motivation is practical, not cognitive validation: when a pretrained encoder must stay frozen because language-specific training data or compute is limited, can mechanisms structured this way produce a better sentence representation than the simplest trainable alternative? We treat that as an empirical hypothesis to test, not an advantage assumed from the inspiration itself -- cognitive and linguistic theories can motivate a richer pooling mechanism, but motivation is not evidence. This paper tests whether such mechanisms actually improve low-resource sentence embeddings under a controlled, fair comparison, and finds that the answer depends substantially on language and capacity.
 
+Concretely, four mechanisms make up the architecture under test (Section~\ref{sec:method} details each). \emph{Semantic attention pooling} and a \emph{compositional aggregator} -- a BiGRU run over the encoder's token representations -- are fused into the single core sentence embedding evaluated throughout this paper. \emph{Memory-aware retrieval} and a \emph{predictive next-sentence head} are trained and evaluated as separate downstream capabilities rather than fused into that embedding: Section~\ref{sec:results:memory} tests fusing them directly and finds it does not help, which is why they are kept apart. Whether any of this is useful for embedding research beyond this specific study is not something we assume going in -- it is the question the paper tests, and the answer is mixed: the attribution result for attention and composition is largely negative at the fixed capacity evaluated throughout (Section~\ref{sec:results:limitations}), memory-aware retrieval and predictive modeling are established as genuinely useful standalone capabilities regardless of that result (Section~\ref{sec:contributions}), and the fair-baseline, capacity-matched protocol used to reach these conclusions is itself reusable for evaluating any pooling mechanism, independent of what this paper concludes about its own.
+
 \emph{Lightweight} here refers to the trainable component only, not the frozen backbone: both heads are under two percent of the combined model's parameters (Table~\ref{tab:efficiency}). This should not obscure the difference between them. The structured head ($4{,}430{,}592$ trainable parameters) is itself $7.5\times$ larger than the linear head ($590{,}592$); ``lightweight relative to the backbone'' is not the same claim as ``comparably sized to each other,'' and we treat that $7.5\times$ gap as a substantive cost throughout, not a rounding error inside a shared two-percent budget. \emph{Low-resource languages} describes four of the five languages we evaluate: Bangla, Telugu, Hindi, Arabic. We include English deliberately, as a high-resource control. It is the only language here with a large native pretraining corpus and a large native fine-tuning set. It is also, as we show, the only language where the answer to this paper's central question changes at the fixed capacity evaluated throughout (Section~\ref{sec:results:limitations} revisits this once capacity is no longer fixed).
 
 \subsection{Research Gap}
@@ -524,7 +526,6 @@ The linear head is not just competitive on quality. Parameter count and training
 \begin{table}[h]
 \caption{Accuracy by embedding dimension: Matryoshka-trained ours and linear head, versus naively-truncated LaBSE. Both heads trained with the identical Matryoshka recipe; only the trainable module differs. This table shows the raw scores behind the 768$\to$64 compression deltas discussed in the text (two of the five languages tested; English and Hindi are shown here as representative, the other three are given as deltas only). No cell is bolded: the claim this table supports is within-head stability under compression (does each head's own accuracy hold from 768 to 64 dimensions), not a per-dimension Ours-vs-Linear contest, which this table was not designed to support and does not discuss.}
 \label{tab:matryoshka}
-\resizebox{\linewidth}{!}{%
 \begin{tabular}{@{}rrrrrrr@{}}
 \toprule
 & \multicolumn{3}{c}{English} & \multicolumn{3}{c}{Hindi} \\
@@ -535,8 +536,7 @@ Dimension & Ours & Linear & LaBSE trunc.\ & Ours & Linear & LaBSE trunc.\ \\
 128 & 0.7261 & 0.6809 & 0.7596 & 0.6757 & 0.6466 & 0.7052 \\
 64  & 0.7265 & 0.6742 & 0.7332 & 0.6763 & 0.6366 & 0.6806 \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
 \begin{figure}[h]
